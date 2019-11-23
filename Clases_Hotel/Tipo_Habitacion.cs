@@ -10,12 +10,12 @@ namespace Clases_Hotel
 {
     public class Tipo_Habitacion
     {
-        public string ID_TipoHabitacion { get; set; }
+        public int ID_TipoHabitacion { get; set; }
         public string Descripcion { get; set; }
 
         public override string ToString()
         {
-            return ID_TipoHabitacion.ToString();
+            return ID_TipoHabitacion.ToString() + " " + Descripcion;
         }
 
 
@@ -41,7 +41,7 @@ namespace Clases_Hotel
                 while (elLectorDeDatos.Read())
                 {
                     tipo_habitacion = new Tipo_Habitacion();
-                    tipo_habitacion.ID_TipoHabitacion = Convert.ToString(elLectorDeDatos.GetInt32(0));
+                    tipo_habitacion.ID_TipoHabitacion = elLectorDeDatos.GetInt32(0);
                     tipo_habitacion.Descripcion = elLectorDeDatos.GetString(1);
 
                     listaTipoHabitaciones.Add(tipo_habitacion);
@@ -64,7 +64,7 @@ namespace Clases_Hotel
 
             foreach (Tipo_Habitacion th in listaTipoHabitaciones)
             {
-                if (th.ID_TipoHabitacion == id.ToString())
+                if (th.ID_TipoHabitacion == id)
                 {
                     tipo_habitacion = th;
                     break;

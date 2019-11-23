@@ -11,8 +11,8 @@ namespace Clases_Hotel
 {
     public class Habitacion
     {
-        public string ID_Habitacion { get; set; }
-        public string Numero { get; set; }
+        public int ID_Habitacion { get; set; }
+        public int Numero { get; set; }
         public Estado_Habitacion Id_EstadoHabitacion { get; set; }
         public Tipo_Habitacion Id_TipoHabitacion { get; set; }
         public double Costo { get; set; }
@@ -44,8 +44,8 @@ namespace Clases_Hotel
                 while (elLectorDeDatos.Read())
                 {
                     habitacion = new Habitacion();
-                    habitacion.ID_Habitacion = Convert.ToString(elLectorDeDatos.GetInt32(0));
-                    habitacion.Numero = Convert.ToString(elLectorDeDatos.GetInt32(1));
+                    habitacion.ID_Habitacion = elLectorDeDatos.GetInt32(0);
+                    habitacion.Numero = elLectorDeDatos.GetInt32(1);
                     habitacion.Id_EstadoHabitacion = Estado_Habitacion.ObtenerEsHabitacion(elLectorDeDatos.GetInt32(2));
                     habitacion.Id_TipoHabitacion = Tipo_Habitacion.ObtenerThabitacion(elLectorDeDatos.GetInt32(3));
                     habitacion.Costo = Convert.ToDouble(elLectorDeDatos.GetDouble(4));
@@ -71,7 +71,7 @@ namespace Clases_Hotel
 
             foreach (Habitacion h in listaHabitaciones)
             {
-                if (h.ID_Habitacion == id.ToString())
+                if (h.ID_Habitacion == id)
                 {
                     habitacion = h;
                     break;

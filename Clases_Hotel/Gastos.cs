@@ -19,7 +19,7 @@ namespace Clases_Hotel
 
     public class Gastos
     {
-            public string ID_Gasto { get; set; }
+            public int ID_Gasto { get; set; }
             public Reserva ID_Reserva_Gasto { get; set; }
             public Servicios Servicio { get; set; }
             public DateTime FechaGasto { get; set; }
@@ -29,7 +29,7 @@ namespace Clases_Hotel
 
             public override string ToString()
             {
-                return ID_Gasto;
+                return ID_Gasto.ToString();
             }
 
             public static List<Gastos> listagastos = new List<Gastos>();
@@ -52,7 +52,7 @@ namespace Clases_Hotel
                 while (elLectorDeDatos.Read())
                 {
                     gastos = new Gastos();
-                    gastos.ID_Gasto = Convert.ToString(elLectorDeDatos.GetInt32(0));
+                    gastos.ID_Gasto = elLectorDeDatos.GetInt32(0);
                     gastos.ID_Reserva_Gasto = Reserva.ObtenerReserva(elLectorDeDatos.GetInt32(1));
                     gastos.Servicio = (Servicios)elLectorDeDatos.GetInt32(2);
                     gastos.FechaGasto = elLectorDeDatos.GetDateTime(3);

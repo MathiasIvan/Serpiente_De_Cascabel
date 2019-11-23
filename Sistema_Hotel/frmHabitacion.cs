@@ -88,8 +88,12 @@ namespace Sistema_Hotel
         private Habitacion ObtenerDatosFormulario()
         {
             Habitacion habitacion = new Habitacion();
-            habitacion.ID_Habitacion = Convert.ToString((txtCodHabitacion.Text));
-            habitacion.Numero = txtNroHabitacion.Text;
+            if (!string.IsNullOrEmpty(txtCodHabitacion.Text))
+            {
+                habitacion.ID_Habitacion = Convert.ToInt32(txtCodHabitacion.Text);
+            }
+
+            habitacion.Numero = Convert.ToInt32(txtNroHabitacion.Text);
             habitacion.Id_EstadoHabitacion = (Estado_Habitacion)cboEstadoHabitacion.SelectedItem;
             habitacion.Costo = Convert.ToDouble(txtCostoHabitacion.Text);
             habitacion.Id_TipoHabitacion = (Tipo_Habitacion)cboTipoHabitacion.SelectedItem;
@@ -173,11 +177,11 @@ namespace Sistema_Hotel
 
             if (h != null)
             {
-                txtCodHabitacion.Text = h.ID_Habitacion.ToString();
-                txtNroHabitacion.Text = h.Numero;
-                cboEstadoHabitacion.SelectedItem = h.Id_EstadoHabitacion;
-                txtCostoHabitacion.Text = h.Costo.ToString();
-                cboTipoHabitacion.SelectedItem = h.Id_TipoHabitacion.ToString();
+                txtCodHabitacion.Text = Convert.ToString(h.ID_Habitacion);
+                txtNroHabitacion.Text = Convert.ToString(h.Numero);
+                cboEstadoHabitacion.SelectedItem = Convert.ToString(h.Id_EstadoHabitacion);
+                txtCostoHabitacion.Text = Convert.ToString(h.Costo);
+                cboTipoHabitacion.SelectedItem = Convert.ToString(h.Id_TipoHabitacion);
                 txtDescripcionHabitacion.Text = h.Descripcion;
 
             }
@@ -197,8 +201,9 @@ namespace Sistema_Hotel
             ActualizarListaHabitaciones();
             cboEstadoHabitacion.DataSource = Estado_Habitacion.ObtenerEstadoHabitacion();
             cboTipoHabitacion.DataSource = Tipo_Habitacion.ObtenerTipoHabitaciones();
-            cboEstadoHabitacion.SelectedItem = null;
-            cboTipoHabitacion.SelectedItem = null;
+
+            //cboEstadoHabitacion.SelectedIndex = null;
+            //cboTipoHabitacion.SelectedIndex = null;
             BloquearFormulario();
         }
 

@@ -189,6 +189,7 @@
             this.txtCodReserva.ForeColor = System.Drawing.Color.Transparent;
             this.txtCodReserva.Location = new System.Drawing.Point(362, 12);
             this.txtCodReserva.Name = "txtCodReserva";
+            this.txtCodReserva.ReadOnly = true;
             this.txtCodReserva.Size = new System.Drawing.Size(156, 20);
             this.txtCodReserva.TabIndex = 19;
             // 

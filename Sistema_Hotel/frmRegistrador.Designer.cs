@@ -171,6 +171,7 @@
             this.txtCodRegistrador.BackColor = System.Drawing.Color.LightCyan;
             this.txtCodRegistrador.Location = new System.Drawing.Point(373, 12);
             this.txtCodRegistrador.Name = "txtCodRegistrador";
+            this.txtCodRegistrador.ReadOnly = true;
             this.txtCodRegistrador.Size = new System.Drawing.Size(142, 20);
             this.txtCodRegistrador.TabIndex = 16;
             // 

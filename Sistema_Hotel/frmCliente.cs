@@ -34,7 +34,7 @@ namespace Sistema_Hotel
 
             if (c != null)
             {
-                txtCodCliente.Text = c.ID_Cliente;
+                txtCodCliente.Text = c.ID_Cliente.ToString();
                 txtNombreCliente.Text = c.Nombre;
                 txtDireccionCliente.Text = c.Direccion;
                 txtNroDocumentoCliente.Text = c.NroDocumento;
@@ -137,7 +137,11 @@ namespace Sistema_Hotel
         private Cliente ObtenerDatosFormulario()
         {
             Cliente cliente = new Cliente();
-            cliente.ID_Cliente = txtCodCliente.Text;
+            if (!string.IsNullOrEmpty(txtCodCliente.Text))
+            {
+                cliente.ID_Cliente = Convert.ToInt32(txtCodCliente.Text);
+            }
+           
             cliente.Nombre = txtNombreCliente.Text;
             cliente.Direccion = txtDireccionCliente.Text;
             cliente.NroDocumento = txtNroDocumentoCliente.Text;

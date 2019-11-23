@@ -144,6 +144,7 @@
             this.txtCodTipoHabitacion.BackColor = System.Drawing.Color.LightCyan;
             this.txtCodTipoHabitacion.Location = new System.Drawing.Point(386, 12);
             this.txtCodTipoHabitacion.Name = "txtCodTipoHabitacion";
+            this.txtCodTipoHabitacion.ReadOnly = true;
             this.txtCodTipoHabitacion.Size = new System.Drawing.Size(142, 20);
             this.txtCodTipoHabitacion.TabIndex = 9;
             // 

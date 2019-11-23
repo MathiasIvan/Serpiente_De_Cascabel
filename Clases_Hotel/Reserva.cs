@@ -47,13 +47,13 @@ namespace Clases_Hotel
                 {
                     reserva = new Reserva();
                     reserva.ID_Reserva = elLectorDeDatos.GetInt32(0);
-                    /*reserva.FechaHoraEntrada =  elLectorDeDatos.GetDateTime(0);
-                    reserva.FechaHoraSalida = elLectorDeDatos.GetDateTime(1);
-                    reserva.Id_Habitacion = Habitacion.ObtenerHabitacion(elLectorDeDatos.GetInt32(2));
-                    reserva.Id_Cliente = Cliente.ObtenerCliente(elLectorDeDatos.GetInt32(3));
-                    reserva.Id_Registrador = Registrador.ObtenerRegistrador(elLectorDeDatos.GetInt32(4));
-                    reserva.CostoTotal = elLectorDeDatos.GetDouble(5);
-                    reserva.Observacion = elLectorDeDatos.GetString(6);*/
+                    reserva.FechaHoraEntrada =  elLectorDeDatos.GetDateTime(1);
+                    reserva.FechaHoraSalida = elLectorDeDatos.GetDateTime(2);
+                    reserva.Id_Habitacion = Habitacion.ObtenerHabitacion(elLectorDeDatos.GetInt32(3));
+                    reserva.Id_Cliente = Cliente.ObtenerCliente(elLectorDeDatos.GetInt32(4));
+                    reserva.Id_Registrador = Registrador.ObtenerRegistrador(elLectorDeDatos.GetInt32(5));
+                    reserva.CostoTotal = elLectorDeDatos.GetDouble(6);
+                    reserva.Observacion = elLectorDeDatos.GetString(7);
 
                    listareserva.Add(reserva);
                 }
@@ -91,7 +91,7 @@ namespace Clases_Hotel
 
             {
                 con.Open();
-                string textoCmd = "insert into Reserva (FechaHoraEntrada, FechaHoraSalida, Id_Habitacion, Id_Cliente, Id_Registrador, Id_Registrador, Costo_Total, Observacion)values (@FechaHoraEntrada, @FechaHoraSalida, @Id_Habitacion, @Id_Cliente, @Id_Registrador, @Id_Registrador, @Costo_Total, @Observacion)";
+                string textoCmd = "insert into Reserva (FechaHoraEntrada, FechaHoraSalida, Id_Habitacion, Id_Cliente, Id_Registrador, Costo_Total, Observacion)values (@FechaHoraEntrada, @FechaHoraSalida, @Id_Habitacion, @Id_Cliente, @Id_Registrador, @Costo_Total, @Observacion)";
                 SqlCommand cmd = new SqlCommand(textoCmd, con);
                 cmd = rs.ObtenerParametros(cmd);
                 cmd.ExecuteNonQuery();

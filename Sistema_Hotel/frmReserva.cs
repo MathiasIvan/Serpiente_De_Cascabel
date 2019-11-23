@@ -51,8 +51,13 @@ namespace Sistema_Hotel
 
         private Reserva ObtenerDatosFormulario()
         {
+
             Reserva reserva = new Reserva();
-            reserva.ID_Reserva = Convert.ToInt32(txtCodReserva.Text);
+            if (!string.IsNullOrEmpty(txtCodReserva.Text))
+            {
+                reserva.ID_Reserva = Convert.ToInt32(txtCodReserva.Text);
+            }
+
             reserva.FechaHoraEntrada = dtpFechaHoraEntradaReserva.Value.Date;
             reserva.FechaHoraSalida = dtpFechaHoraSalidaReserva.Value.Date;
             reserva.Id_Habitacion = (Habitacion)cboHabitacionReserva.SelectedItem;
@@ -103,9 +108,9 @@ namespace Sistema_Hotel
                 txtCodReserva.Text = rs.ID_Reserva.ToString();
                 dtpFechaHoraEntradaReserva.MinDate = rs.FechaHoraEntrada;
                 dtpFechaHoraSalidaReserva.MinDate = rs.FechaHoraSalida;
-                cboHabitacionReserva.SelectedItem = rs.Id_Habitacion;
-                cboClienteReserva.SelectedItem = rs.Id_Cliente;
-                cboRegistradorReserva.SelectedItem = rs.Id_Registrador;
+                cboHabitacionReserva.SelectedItem = rs.Id_Habitacion.ToString(); 
+                cboClienteReserva.SelectedItem = rs.Id_Cliente.ToString(); 
+                cboRegistradorReserva.SelectedItem = rs.Id_Registrador.ToString(); 
                 txtCostoTotalReserva.Text = rs.CostoTotal.ToString();
                 txtObservacionReserva.Text = rs.Observacion;
             }

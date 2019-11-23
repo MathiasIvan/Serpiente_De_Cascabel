@@ -33,7 +33,7 @@ namespace Sistema_Hotel
 
             if (r != null)
             {
-                txtCodRegistrador.Text = r.ID_Registrador;
+                txtCodRegistrador.Text = r.ID_Registrador.ToString();
                 txtNombreRegistrador.Text = r.Nombre;
                 txtDireccionRegistrador.Text = r.Direccion;
                 txtTelefonoRegistrador.Text = r.Telefono;
@@ -138,8 +138,13 @@ namespace Sistema_Hotel
 
         private Registrador ObtenerDatosFormulario()
         {
+
             Registrador registrador = new Registrador();
-            registrador.ID_Registrador = txtCodRegistrador.Text;
+            if (!string.IsNullOrEmpty(txtCodRegistrador.Text))
+            {
+                registrador.ID_Registrador = Convert.ToInt32(txtCodRegistrador.Text);
+            }
+           
             registrador.Nombre = txtNombreRegistrador.Text;
             registrador.Direccion = txtDireccionRegistrador.Text;
             registrador.Telefono = txtTelefonoRegistrador.Text;

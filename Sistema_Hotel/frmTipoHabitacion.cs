@@ -132,7 +132,11 @@ namespace Sistema_Hotel
         private Tipo_Habitacion ObtenerDatosFormulario()
         {
             Tipo_Habitacion tipohabitacion = new Tipo_Habitacion();
-            tipohabitacion.ID_TipoHabitacion = txtCodTipoHabitacion.Text;
+            if (!string.IsNullOrEmpty(txtCodTipoHabitacion.Text))
+            {
+                tipohabitacion.ID_TipoHabitacion = Convert.ToInt32(txtCodTipoHabitacion.Text);
+            }
+
             tipohabitacion.Descripcion = txtDescripcionTipoHabitacion.Text;
 
             return tipohabitacion;

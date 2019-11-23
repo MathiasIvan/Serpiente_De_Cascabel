@@ -132,7 +132,11 @@ namespace Sistema_Hotel
         private Estado_Habitacion ObtenerDatosFormulario()
         {
             Estado_Habitacion estadoHabitacion = new Estado_Habitacion();
-            estadoHabitacion.ID_EstadoHabitacion = txtCodEstadoHabitacion.Text;
+            if (!string.IsNullOrEmpty(txtCodEstadoHabitacion.Text))
+            {
+                estadoHabitacion.ID_EstadoHabitacion = Convert.ToInt32(txtCodEstadoHabitacion.Text);
+            }
+
             estadoHabitacion.Descripcion = txtDescripcionEstadoHabitacion.Text;
 
             return estadoHabitacion;

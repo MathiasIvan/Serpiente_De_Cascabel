@@ -158,6 +158,7 @@
             this.txtCodHabitacion.BackColor = System.Drawing.Color.LightCyan;
             this.txtCodHabitacion.Location = new System.Drawing.Point(373, 12);
             this.txtCodHabitacion.Name = "txtCodHabitacion";
+            this.txtCodHabitacion.ReadOnly = true;
             this.txtCodHabitacion.Size = new System.Drawing.Size(142, 20);
             this.txtCodHabitacion.TabIndex = 36;
             // 

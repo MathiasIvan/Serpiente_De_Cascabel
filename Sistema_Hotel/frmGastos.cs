@@ -53,7 +53,11 @@ namespace Sistema_Hotel
         private Gastos ObtenerDatosFormulario()
         {
             Gastos gasto = new Gastos();
-            gasto.ID_Gasto = txtCodGasto.Text;
+            if (!string.IsNullOrEmpty(txtCodGasto.Text))
+            {
+                gasto.ID_Gasto = Convert.ToInt32(txtCodGasto.Text);
+            }
+
             gasto.ID_Reserva_Gasto = (Reserva)cboReservaGasto.SelectedItem;
             gasto.Servicio = (Servicios)cboServicioGasto.SelectedItem;
             gasto.FechaGasto = dtpFechaGasto.Value.Date;
@@ -168,7 +172,7 @@ namespace Sistema_Hotel
 
             if (g != null)
             {
-                txtCodGasto.Text = g.ID_Gasto;
+                txtCodGasto.Text = g.ID_Gasto.ToString();
                 cboReservaGasto.SelectedItem = g.ID_Reserva_Gasto;
                 cboServicioGasto.SelectedItem = g.Servicio;
                 dtpFechaGasto.Value = g.FechaGasto;

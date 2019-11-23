@@ -11,14 +11,14 @@ namespace Clases_Hotel
 {
     public class Registrador: Persona
     {
-        public string ID_Registrador { get; set; }
+        public int ID_Registrador { get; set; }
         public string Observacion { get; set; }
 
 
 
         public override string ToString()
         {
-            return ID_Registrador.ToString();
+            return ID_Registrador.ToString() + " " + Nombre;
         }
 
 
@@ -44,7 +44,7 @@ namespace Clases_Hotel
                 while (elLectorDeDatos.Read())
                 {
                     registrador = new Registrador();
-                    registrador.ID_Registrador = Convert.ToString(elLectorDeDatos.GetInt32(0));
+                    registrador.ID_Registrador = elLectorDeDatos.GetInt32(0);
                     registrador.Nombre = elLectorDeDatos.GetString(1);
                     registrador.Direccion = elLectorDeDatos.GetString(2);
                     registrador.NroDocumento = elLectorDeDatos.GetString(3);
@@ -72,7 +72,7 @@ namespace Clases_Hotel
 
             foreach (Registrador r in listaRegistradores)
             {
-                if (r.ID_Registrador == id.ToString())
+                if (r.ID_Registrador == id)
                 {
                     regsitrador = r;
                     break;

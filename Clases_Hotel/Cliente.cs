@@ -22,14 +22,14 @@ namespace Clases_Hotel
 
     public class Cliente: Persona
     {     
-            public string ID_Cliente;
+            public int ID_Cliente;
             public Nacionalidades Nacionalidad;
             
 
 
             public override string ToString()
             {
-                return ID_Cliente.ToString();
+                return ID_Cliente.ToString() + " " + Nombre;
             }
 
 
@@ -55,7 +55,7 @@ namespace Clases_Hotel
                 while (elLectorDeDatos.Read())
                 {
                     cliente = new Cliente();
-                    cliente.ID_Cliente = Convert.ToString(elLectorDeDatos.GetInt32(0));
+                    cliente.ID_Cliente = elLectorDeDatos.GetInt32(0);
                     cliente.Nombre = elLectorDeDatos.GetString(1);
                     cliente.Direccion = elLectorDeDatos.GetString(2);
                     cliente.NroDocumento = elLectorDeDatos.GetString(3);
@@ -82,7 +82,7 @@ namespace Clases_Hotel
 
             foreach (Cliente c in listaClientes)
             {
-                if (c.ID_Cliente == id.ToString())
+                if (c.ID_Cliente == id)
                 {
                     cliente = c;
                     break;

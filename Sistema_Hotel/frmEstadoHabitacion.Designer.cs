@@ -135,6 +135,7 @@
             this.txtCodEstadoHabitacion.BackColor = System.Drawing.Color.LightCyan;
             this.txtCodEstadoHabitacion.Location = new System.Drawing.Point(372, 12);
             this.txtCodEstadoHabitacion.Name = "txtCodEstadoHabitacion";
+            this.txtCodEstadoHabitacion.ReadOnly = true;
             this.txtCodEstadoHabitacion.Size = new System.Drawing.Size(142, 20);
             this.txtCodEstadoHabitacion.TabIndex = 0;
             this.txtCodEstadoHabitacion.TabStop = false;

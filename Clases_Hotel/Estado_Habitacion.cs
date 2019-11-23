@@ -10,14 +10,14 @@ namespace Clases_Hotel
 {
     public class Estado_Habitacion
     {
-        public string ID_EstadoHabitacion { get; set; }
+        public int ID_EstadoHabitacion { get; set; }
         public string Descripcion { get; set; }
 
 
 
         public override string ToString()
         {
-            return ID_EstadoHabitacion.ToString();
+            return ID_EstadoHabitacion.ToString() + " " + Descripcion;
         }
 
 
@@ -43,7 +43,7 @@ namespace Clases_Hotel
                 while (elLectorDeDatos.Read())
                 {
                     estado_habitacion = new Estado_Habitacion();
-                    estado_habitacion.ID_EstadoHabitacion = Convert.ToString(elLectorDeDatos.GetInt32(0));
+                    estado_habitacion.ID_EstadoHabitacion = elLectorDeDatos.GetInt32(0);
                     estado_habitacion.Descripcion = elLectorDeDatos.GetString(1);
      
                     listaEstadoHabitacion.Add(estado_habitacion);
@@ -66,7 +66,7 @@ namespace Clases_Hotel
 
             foreach (Estado_Habitacion eh in listaEstadoHabitacion)
             {
-                if (eh.ID_EstadoHabitacion == id.ToString())
+                if (eh.ID_EstadoHabitacion == id)
                 {
                     estado_habitacion = eh;
                     break;

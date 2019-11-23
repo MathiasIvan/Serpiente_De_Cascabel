@@ -158,6 +158,7 @@
             this.txtCodGasto.BackColor = System.Drawing.Color.LightCyan;
             this.txtCodGasto.Location = new System.Drawing.Point(349, 12);
             this.txtCodGasto.Name = "txtCodGasto";
+            this.txtCodGasto.ReadOnly = true;
             this.txtCodGasto.Size = new System.Drawing.Size(142, 20);
             this.txtCodGasto.TabIndex = 14;
             // 
