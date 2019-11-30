@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Clases_Hotel;
+using System.Runtime.InteropServices;
 
 namespace Sistema_Hotel
 {
@@ -19,7 +20,22 @@ namespace Sistema_Hotel
             InitializeComponent();
         }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        #region Dlls para poder hacer el movimiento del Form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        Rectangle sizeGripRectangle;
+        bool inSizeDrag = false;
+        const int GRIP_SIZE = 15;
+
+        int w = 0;
+        int h = 0;
+        #endregion
+
+        private void btnAceptar_Click_1(object sender, EventArgs e)
         {
             var g = ObtenerDatosFormulario();
 
@@ -50,6 +66,8 @@ namespace Sistema_Hotel
             BloquearFormulario();
         }
 
+       
+
         private Gastos ObtenerDatosFormulario()
         {
             Gastos gasto = new Gastos();
@@ -68,7 +86,8 @@ namespace Sistema_Hotel
 
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
+
+        private void btnActualizar_Click_1(object sender, EventArgs e)
         {
             if (this.lstGastos.SelectedItems.Count == 0)
             {
@@ -83,8 +102,7 @@ namespace Sistema_Hotel
         }
 
 
-
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void btnEliminar_Click_1(object sender, EventArgs e)
         {
             if (this.lstGastos.SelectedItems.Count == 0)
             {
@@ -99,6 +117,7 @@ namespace Sistema_Hotel
             }
         }
 
+   
         private void BloquearFormulario()
         {
             txtCodGasto.Enabled = false;
@@ -181,30 +200,41 @@ namespace Sistema_Hotel
             }
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void btnLimpiar_Click_1(object sender, EventArgs e)
         {
             LimpiarFormulario();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+       
+        private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             LimpiarFormulario();
             BloquearFormulario();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
         {
-            Close();    
+            Close();
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+
+
+        private void btnAgregar_Click_1(object sender, EventArgs e)
         {
             alternativa = "Agregar";
             LimpiarFormulario();
             DesbloquearFormulario();
             txtCodGasto.Focus();
         }
-        
+
+        private void mnsMoverFormulario_MouseDown(object sender, MouseEventArgs e)
+        {
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            w = this.Width;
+            h = this.Height;
+        }
     }
 
 }

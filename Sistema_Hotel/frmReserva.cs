@@ -58,6 +58,11 @@ namespace Sistema_Hotel
                 reserva.ID_Reserva = Convert.ToInt32(txtCodReserva.Text);
             }
 
+            if (this.dtpFechaHoraEntradaReserva.Value.CompareTo(this.dtpFechaHoraSalidaReserva.Value)==1)
+            {
+                MessageBox.Show("La Fecha de Salida no puede ser mayor a la Fecha de Entrada.");
+            }
+
             reserva.FechaHoraEntrada = dtpFechaHoraEntradaReserva.Value.Date;
             reserva.FechaHoraSalida = dtpFechaHoraSalidaReserva.Value.Date;
             reserva.Id_Habitacion = (Habitacion)cboHabitacionReserva.SelectedItem;

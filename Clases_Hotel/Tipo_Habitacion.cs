@@ -22,7 +22,7 @@ namespace Clases_Hotel
 
         public static List<Tipo_Habitacion> listaTipoHabitaciones = new List<Tipo_Habitacion>();
 
-
+        
 
         public static List<Tipo_Habitacion> ObtenerTipoHabitaciones()
         {

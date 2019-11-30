@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -76,6 +80,12 @@
     <Compile Include="frmHabitacion.Designer.cs">
       <DependentUpon>frmHabitacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMenu_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu_Principal.Designer.cs">
+      <DependentUpon>frmMenu_Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegistrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,12 +104,6 @@
     <Compile Include="frmTipoHabitacion.Designer.cs">
       <DependentUpon>frmTipoHabitacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMenuPrincipal.Designer.cs">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCliente.resx">
@@ -117,6 +121,9 @@
     <EmbeddedResource Include="frmHabitacion.resx">
       <DependentUpon>frmHabitacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu_Principal.resx">
+      <DependentUpon>frmMenu_Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrador.resx">
       <DependentUpon>frmRegistrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,9 +133,6 @@
     <EmbeddedResource Include="frmTipoHabitacion.resx">
       <DependentUpon>frmTipoHabitacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMenuPrincipal.resx">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -137,6 +141,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -156,6 +161,69 @@
       <Project>{577d89fa-f949-45be-b000-d8ca2a7b58f5}</Project>
       <Name>Clases_Hotel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\wallhaven-6q9xkl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\person_user_customer_man_male_man_boy_people_1687.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\Minimize Window_2 48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\Restore Window 2_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\Close Window_ 2 48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\Maximize Window_2 48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\Clientes_Proveedores_Principal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\Cartadd_icon-icons.com_51193.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\customer_person_people_man_user_client_1629.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\Banking_00017_A_icon-icons.com_59837.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\shoppaymentorderbuy-04_icon-icons.com_73886.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\bed_icon-icons.com_63551.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\1500x844_gestion_ventas_cartera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\Menu_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\wallhaven-ym58eg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\wallhaven-0jpvrm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\wallhaven-4gjg67.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\wallhaven-8xx1pk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\wallhaven-zmv33w.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\wallhaven-0ql6ld.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\wallhaven-n673ww.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

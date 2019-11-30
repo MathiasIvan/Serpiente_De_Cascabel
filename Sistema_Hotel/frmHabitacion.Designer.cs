@@ -48,64 +48,109 @@
             this.lblCodHabitacion = new System.Windows.Forms.Label();
             this.cboEstadoHabitacion = new System.Windows.Forms.ComboBox();
             this.txtNroHabitacion = new System.Windows.Forms.TextBox();
+            this.gbxHabitacion = new System.Windows.Forms.GroupBox();
+            this.pictHabitacion = new System.Windows.Forms.PictureBox();
+            this.lblListadoHabitacion = new System.Windows.Forms.Label();
+            this.mnsMoverFormulario = new System.Windows.Forms.MenuStrip();
+            this.gbxHabitacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictHabitacion)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(278, 292);
+            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(744, 483);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(237, 23);
+            this.btnSalir.Size = new System.Drawing.Size(88, 30);
             this.btnSalir.TabIndex = 48;
             this.btnSalir.Text = "&Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(174, 292);
+            this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(744, 443);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(88, 30);
             this.btnEliminar.TabIndex = 47;
             this.btnEliminar.Text = "&Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(93, 292);
+            this.btnActualizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnActualizar.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnActualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(744, 405);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(88, 30);
             this.btnActualizar.TabIndex = 46;
             this.btnActualizar.Text = "&Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(12, 292);
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregar.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(744, 365);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(88, 30);
             this.btnAgregar.TabIndex = 45;
             this.btnAgregar.Text = "&Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(359, 253);
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelar.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Location = new System.Drawing.Point(108, 269);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(88, 30);
             this.btnCancelar.TabIndex = 43;
             this.btnCancelar.Text = "C&ancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnLimpiar
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.Transparent;
-            this.btnLimpiar.Location = new System.Drawing.Point(440, 253);
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Location = new System.Drawing.Point(202, 269);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.Size = new System.Drawing.Size(88, 30);
             this.btnLimpiar.TabIndex = 44;
             this.btnLimpiar.Text = "&Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -113,153 +158,239 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(278, 253);
+            this.btnAceptar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAceptar.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Location = new System.Drawing.Point(10, 269);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.Size = new System.Drawing.Size(88, 30);
             this.btnAceptar.TabIndex = 42;
             this.btnAceptar.Text = "&Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // cboTipoHabitacion
             // 
+            this.cboTipoHabitacion.BackColor = System.Drawing.Color.White;
+            this.cboTipoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboTipoHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTipoHabitacion.FormattingEnabled = true;
-            this.cboTipoHabitacion.Location = new System.Drawing.Point(369, 163);
+            this.cboTipoHabitacion.Location = new System.Drawing.Point(118, 193);
             this.cboTipoHabitacion.Name = "cboTipoHabitacion";
-            this.cboTipoHabitacion.Size = new System.Drawing.Size(146, 21);
+            this.cboTipoHabitacion.Size = new System.Drawing.Size(172, 24);
             this.cboTipoHabitacion.TabIndex = 40;
             // 
             // lstHabitacion
             // 
+            this.lstHabitacion.BackColor = System.Drawing.Color.White;
+            this.lstHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lstHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstHabitacion.FormattingEnabled = true;
-            this.lstHabitacion.Location = new System.Drawing.Point(12, 12);
+            this.lstHabitacion.ItemHeight = 16;
+            this.lstHabitacion.Location = new System.Drawing.Point(12, 365);
             this.lstHabitacion.Name = "lstHabitacion";
-            this.lstHabitacion.Size = new System.Drawing.Size(236, 264);
+            this.lstHabitacion.Size = new System.Drawing.Size(716, 148);
             this.lstHabitacion.TabIndex = 55;
             this.lstHabitacion.TabStop = false;
             this.lstHabitacion.Click += new System.EventHandler(this.lstHabitacion_Click);
             // 
             // txtDescripcionHabitacion
             // 
-            this.txtDescripcionHabitacion.Location = new System.Drawing.Point(342, 201);
+            this.txtDescripcionHabitacion.BackColor = System.Drawing.Color.White;
+            this.txtDescripcionHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtDescripcionHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionHabitacion.Location = new System.Drawing.Point(86, 233);
             this.txtDescripcionHabitacion.Name = "txtDescripcionHabitacion";
-            this.txtDescripcionHabitacion.Size = new System.Drawing.Size(173, 20);
+            this.txtDescripcionHabitacion.Size = new System.Drawing.Size(204, 21);
             this.txtDescripcionHabitacion.TabIndex = 41;
             // 
             // txtCostoHabitacion
             // 
-            this.txtCostoHabitacion.Location = new System.Drawing.Point(313, 125);
+            this.txtCostoHabitacion.BackColor = System.Drawing.Color.White;
+            this.txtCostoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtCostoHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCostoHabitacion.Location = new System.Drawing.Point(55, 153);
             this.txtCostoHabitacion.Name = "txtCostoHabitacion";
-            this.txtCostoHabitacion.Size = new System.Drawing.Size(202, 20);
+            this.txtCostoHabitacion.Size = new System.Drawing.Size(235, 21);
             this.txtCostoHabitacion.TabIndex = 39;
             // 
             // txtCodHabitacion
             // 
-            this.txtCodHabitacion.BackColor = System.Drawing.Color.LightCyan;
-            this.txtCodHabitacion.Location = new System.Drawing.Point(373, 12);
+            this.txtCodHabitacion.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCodHabitacion.Cursor = System.Windows.Forms.Cursors.No;
+            this.txtCodHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodHabitacion.Location = new System.Drawing.Point(115, 33);
             this.txtCodHabitacion.Name = "txtCodHabitacion";
             this.txtCodHabitacion.ReadOnly = true;
-            this.txtCodHabitacion.Size = new System.Drawing.Size(142, 20);
+            this.txtCodHabitacion.Size = new System.Drawing.Size(175, 21);
             this.txtCodHabitacion.TabIndex = 36;
             // 
             // lblDescripcionHabitacion
             // 
             this.lblDescripcionHabitacion.AutoSize = true;
-            this.lblDescripcionHabitacion.Location = new System.Drawing.Point(270, 204);
+            this.lblDescripcionHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionHabitacion.Location = new System.Drawing.Point(7, 236);
             this.lblDescripcionHabitacion.Name = "lblDescripcionHabitacion";
-            this.lblDescripcionHabitacion.Size = new System.Drawing.Size(66, 13);
+            this.lblDescripcionHabitacion.Size = new System.Drawing.Size(73, 16);
             this.lblDescripcionHabitacion.TabIndex = 54;
             this.lblDescripcionHabitacion.Text = "Descripción:";
             // 
             // lblTipoHabitacion
             // 
             this.lblTipoHabitacion.AutoSize = true;
-            this.lblTipoHabitacion.Location = new System.Drawing.Point(270, 166);
+            this.lblTipoHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoHabitacion.Location = new System.Drawing.Point(7, 196);
             this.lblTipoHabitacion.Name = "lblTipoHabitacion";
-            this.lblTipoHabitacion.Size = new System.Drawing.Size(93, 13);
+            this.lblTipoHabitacion.Size = new System.Drawing.Size(105, 16);
             this.lblTipoHabitacion.TabIndex = 53;
             this.lblTipoHabitacion.Text = "Tipo / Habitacion:";
             // 
             // lblCostoHabitacion
             // 
             this.lblCostoHabitacion.AutoSize = true;
-            this.lblCostoHabitacion.Location = new System.Drawing.Point(270, 128);
+            this.lblCostoHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCostoHabitacion.Location = new System.Drawing.Point(7, 156);
             this.lblCostoHabitacion.Name = "lblCostoHabitacion";
-            this.lblCostoHabitacion.Size = new System.Drawing.Size(37, 13);
+            this.lblCostoHabitacion.Size = new System.Drawing.Size(42, 16);
             this.lblCostoHabitacion.TabIndex = 52;
             this.lblCostoHabitacion.Text = "Costo:";
             // 
             // lblEstadoHabitacion
             // 
             this.lblEstadoHabitacion.AutoSize = true;
-            this.lblEstadoHabitacion.Location = new System.Drawing.Point(270, 91);
+            this.lblEstadoHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstadoHabitacion.Location = new System.Drawing.Point(7, 116);
             this.lblEstadoHabitacion.Name = "lblEstadoHabitacion";
-            this.lblEstadoHabitacion.Size = new System.Drawing.Size(105, 13);
+            this.lblEstadoHabitacion.Size = new System.Drawing.Size(120, 16);
             this.lblEstadoHabitacion.TabIndex = 51;
             this.lblEstadoHabitacion.Text = "Estado / Habitación:";
             // 
             // lblNroHabitacion
             // 
             this.lblNroHabitacion.AutoSize = true;
-            this.lblNroHabitacion.Location = new System.Drawing.Point(270, 53);
+            this.lblNroHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNroHabitacion.Location = new System.Drawing.Point(7, 76);
             this.lblNroHabitacion.Name = "lblNroHabitacion";
-            this.lblNroHabitacion.Size = new System.Drawing.Size(109, 13);
+            this.lblNroHabitacion.Size = new System.Drawing.Size(125, 16);
             this.lblNroHabitacion.TabIndex = 50;
             this.lblNroHabitacion.Text = "Número / Habitación:";
             // 
             // lblCodHabitacion
             // 
             this.lblCodHabitacion.AutoSize = true;
-            this.lblCodHabitacion.Location = new System.Drawing.Point(270, 15);
+            this.lblCodHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodHabitacion.Location = new System.Drawing.Point(7, 36);
             this.lblCodHabitacion.Name = "lblCodHabitacion";
-            this.lblCodHabitacion.Size = new System.Drawing.Size(86, 13);
+            this.lblCodHabitacion.Size = new System.Drawing.Size(102, 16);
             this.lblCodHabitacion.TabIndex = 49;
             this.lblCodHabitacion.Text = "Cod. Habitación:";
             // 
             // cboEstadoHabitacion
             // 
+            this.cboEstadoHabitacion.BackColor = System.Drawing.Color.White;
+            this.cboEstadoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboEstadoHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboEstadoHabitacion.FormattingEnabled = true;
-            this.cboEstadoHabitacion.Location = new System.Drawing.Point(381, 88);
+            this.cboEstadoHabitacion.Location = new System.Drawing.Point(133, 113);
             this.cboEstadoHabitacion.Name = "cboEstadoHabitacion";
-            this.cboEstadoHabitacion.Size = new System.Drawing.Size(134, 21);
+            this.cboEstadoHabitacion.Size = new System.Drawing.Size(157, 24);
             this.cboEstadoHabitacion.TabIndex = 38;
             // 
             // txtNroHabitacion
             // 
-            this.txtNroHabitacion.Location = new System.Drawing.Point(381, 50);
+            this.txtNroHabitacion.BackColor = System.Drawing.Color.White;
+            this.txtNroHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtNroHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNroHabitacion.Location = new System.Drawing.Point(138, 73);
             this.txtNroHabitacion.Name = "txtNroHabitacion";
-            this.txtNroHabitacion.Size = new System.Drawing.Size(134, 20);
+            this.txtNroHabitacion.Size = new System.Drawing.Size(152, 21);
             this.txtNroHabitacion.TabIndex = 56;
+            // 
+            // gbxHabitacion
+            // 
+            this.gbxHabitacion.Controls.Add(this.pictHabitacion);
+            this.gbxHabitacion.Controls.Add(this.cboEstadoHabitacion);
+            this.gbxHabitacion.Controls.Add(this.txtNroHabitacion);
+            this.gbxHabitacion.Controls.Add(this.lblCodHabitacion);
+            this.gbxHabitacion.Controls.Add(this.lblNroHabitacion);
+            this.gbxHabitacion.Controls.Add(this.lblEstadoHabitacion);
+            this.gbxHabitacion.Controls.Add(this.lblCostoHabitacion);
+            this.gbxHabitacion.Controls.Add(this.lblTipoHabitacion);
+            this.gbxHabitacion.Controls.Add(this.btnCancelar);
+            this.gbxHabitacion.Controls.Add(this.lblDescripcionHabitacion);
+            this.gbxHabitacion.Controls.Add(this.btnLimpiar);
+            this.gbxHabitacion.Controls.Add(this.txtCodHabitacion);
+            this.gbxHabitacion.Controls.Add(this.btnAceptar);
+            this.gbxHabitacion.Controls.Add(this.txtCostoHabitacion);
+            this.gbxHabitacion.Controls.Add(this.cboTipoHabitacion);
+            this.gbxHabitacion.Controls.Add(this.txtDescripcionHabitacion);
+            this.gbxHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxHabitacion.Location = new System.Drawing.Point(12, 12);
+            this.gbxHabitacion.Name = "gbxHabitacion";
+            this.gbxHabitacion.Size = new System.Drawing.Size(820, 321);
+            this.gbxHabitacion.TabIndex = 57;
+            this.gbxHabitacion.TabStop = false;
+            this.gbxHabitacion.Text = "Mantenimiento de Habitaciones";
+            // 
+            // pictHabitacion
+            // 
+            this.pictHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.wallhaven_0ql6ld2;
+            this.pictHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictHabitacion.Location = new System.Drawing.Point(304, 33);
+            this.pictHabitacion.Name = "pictHabitacion";
+            this.pictHabitacion.Size = new System.Drawing.Size(499, 266);
+            this.pictHabitacion.TabIndex = 57;
+            this.pictHabitacion.TabStop = false;
+            // 
+            // lblListadoHabitacion
+            // 
+            this.lblListadoHabitacion.AutoSize = true;
+            this.lblListadoHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListadoHabitacion.Location = new System.Drawing.Point(342, 341);
+            this.lblListadoHabitacion.Name = "lblListadoHabitacion";
+            this.lblListadoHabitacion.Size = new System.Drawing.Size(139, 16);
+            this.lblListadoHabitacion.TabIndex = 58;
+            this.lblListadoHabitacion.Text = "Listado de Habitaciones";
+            // 
+            // mnsMoverFormulario
+            // 
+            this.mnsMoverFormulario.BackColor = System.Drawing.Color.Transparent;
+            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mnsMoverFormulario.Location = new System.Drawing.Point(0, 0);
+            this.mnsMoverFormulario.Name = "mnsMoverFormulario";
+            this.mnsMoverFormulario.Size = new System.Drawing.Size(845, 533);
+            this.mnsMoverFormulario.TabIndex = 59;
+            this.mnsMoverFormulario.Text = "menuStrip1";
+            this.mnsMoverFormulario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mnsMoverFormulario_MouseDown);
             // 
             // frmHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(549, 390);
-            this.Controls.Add(this.txtNroHabitacion);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(845, 533);
+            this.Controls.Add(this.lblListadoHabitacion);
+            this.Controls.Add(this.gbxHabitacion);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.cboTipoHabitacion);
             this.Controls.Add(this.lstHabitacion);
-            this.Controls.Add(this.txtDescripcionHabitacion);
-            this.Controls.Add(this.txtCostoHabitacion);
-            this.Controls.Add(this.cboEstadoHabitacion);
-            this.Controls.Add(this.txtCodHabitacion);
-            this.Controls.Add(this.lblDescripcionHabitacion);
-            this.Controls.Add(this.lblTipoHabitacion);
-            this.Controls.Add(this.lblCostoHabitacion);
-            this.Controls.Add(this.lblEstadoHabitacion);
-            this.Controls.Add(this.lblNroHabitacion);
-            this.Controls.Add(this.lblCodHabitacion);
+            this.Controls.Add(this.mnsMoverFormulario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.mnsMoverFormulario;
             this.Name = "frmHabitacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento de Habitación";
             this.Load += new System.EventHandler(this.frmHabitacion_Load);
+            this.gbxHabitacion.ResumeLayout(false);
+            this.gbxHabitacion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictHabitacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,5 +418,9 @@
         private System.Windows.Forms.Label lblCodHabitacion;
         private System.Windows.Forms.ComboBox cboEstadoHabitacion;
         private System.Windows.Forms.TextBox txtNroHabitacion;
+        private System.Windows.Forms.GroupBox gbxHabitacion;
+        private System.Windows.Forms.PictureBox pictHabitacion;
+        private System.Windows.Forms.Label lblListadoHabitacion;
+        private System.Windows.Forms.MenuStrip mnsMoverFormulario;
     }
 }
