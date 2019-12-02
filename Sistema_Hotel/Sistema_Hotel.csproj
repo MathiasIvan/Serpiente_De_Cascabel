@@ -327,6 +327,18 @@
   <ItemGroup>
     <None Include="bin\Debug\Imagen\lujoso-hotel-cinco-estrellas-recibe-huespedes-fin-semana_110955-459.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\Pngtre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\Privacy-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\Pngtreevector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\Pngtrevector.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

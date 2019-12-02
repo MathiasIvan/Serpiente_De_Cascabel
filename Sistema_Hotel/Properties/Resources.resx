@@ -127,8 +127,8 @@
   <data name="003-hotel-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\003-hotel-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="004-equipo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Iconos\004-equipo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Privacy-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\Privacy-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="002-cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\002-cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +142,17 @@
   <data name="Banking_00017_A_icon-icons.com_59837" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\Banking_00017_A_icon-icons.com_59837.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lujoso-hotel-cinco-estrellas-recibe-huespedes-fin-semana_110955-4591" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\lujoso-hotel-cinco-estrellas-recibe-huespedes-fin-semana_110955-459.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="009-pago1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\009-pago.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="008-pagar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\008-pagar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Privacy-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\Privacy-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wallhaven-n673ww" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Imagen\wallhaven-n673ww.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,8 +187,8 @@
   <data name="Maximize Window_2 48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\Maximize Window_2 48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Clientes_Proveedores_Principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Imagen\Clientes_Proveedores_Principal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pngtreevector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\Pngtreevector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="person_user_customer_man_male_man_boy_people_16871" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\person_user_customer_man_male_man_boy_people_1687.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,11 +241,17 @@
   <data name="Close Window_ 2 48px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\Close Window_ 2 48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="006-viaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Iconos\006-viaje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="004-equipo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Iconos\004-equipo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wallhaven-n673ww2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Imagen\wallhaven-n673ww.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="006-viaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Iconos\006-viaje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="004-empresario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Iconos\004-empresario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="006-hotel-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\006-hotel-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,6 +268,9 @@
   <data name="person_user_customer_man_male_man_boy_people_1687" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\person_user_customer_man_male_man_boy_people_1687.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Privacy-5122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\Privacy-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="007-viaje-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\007-viaje-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -268,11 +283,14 @@
   <data name="001-team" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\001-team.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Pngtre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\Pngtre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Minimize Window_2 48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\Minimize Window_2 48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="004-empresario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Iconos\004-empresario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wallhaven-0ql6ld1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\wallhaven-0ql6ld.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Minimize Window_2 48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\Minimize Window_2 48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,8 +298,8 @@
   <data name="003-team-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\003-team-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wallhaven-0ql6ld1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Imagen\wallhaven-0ql6ld.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pngtrevector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\Pngtrevector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Menu_48px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\Menu_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -307,6 +325,9 @@
   <data name="002-comercio-y-compras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\002-comercio-y-compras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Clientes_Proveedores_Principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\Clientes_Proveedores_Principal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hotel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\hotel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -315,6 +336,9 @@
   </data>
   <data name="002-hotel-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Iconos\002-hotel-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pngtre1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\Pngtre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wallhaven-n673ww1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Imagen\wallhaven-n673ww.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,7 +349,7 @@
   <data name="wallhaven-0jpvrm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Imagen\wallhaven-0jpvrm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lujoso-hotel-cinco-estrellas-recibe-huespedes-fin-semana_110955-4591" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Imagen\lujoso-hotel-cinco-estrellas-recibe-huespedes-fin-semana_110955-459.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pngtrevector1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Imagen\Pngtrevector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

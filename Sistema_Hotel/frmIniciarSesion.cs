@@ -36,7 +36,6 @@ namespace Sistema_Hotel
                 if (Usuario.Autenticar(txtUsuario.Text, txtContraseña.Text))
                 {
                     this.Hide();
-                    MessageBox.Show("Bienvenido " + txtUsuario.Text);
                     frmMenu_Principal elmenuPrincipal = new frmMenu_Principal();
                     elmenuPrincipal.ShowDialog();
                     this.Close();
@@ -57,5 +56,13 @@ namespace Sistema_Hotel
         {
             Close();
         }
+
+        
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+       
     }
 }
