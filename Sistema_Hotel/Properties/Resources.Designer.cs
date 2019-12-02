@@ -513,6 +513,16 @@ namespace Sistema_Hotel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lujoso_hotel_cinco_estrellas_recibe_huespedes_fin_semana_110955_4591 {
+            get {
+                object obj = ResourceManager.GetObject("lujoso-hotel-cinco-estrellas-recibe-huespedes-fin-semana_110955-4591", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Maximize_Window_2_48px {
             get {
                 object obj = ResourceManager.GetObject("Maximize Window_2 48px", resourceCulture);

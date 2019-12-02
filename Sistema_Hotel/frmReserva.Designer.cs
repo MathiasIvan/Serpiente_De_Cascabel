@@ -387,9 +387,9 @@
             // 
             // pictReserva
             // 
-            this.pictReserva.BackgroundImage = global::Sistema_Hotel.Properties.Resources._145971;
             this.pictReserva.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictReserva.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictReserva.ErrorImage = null;
             this.pictReserva.Location = new System.Drawing.Point(299, 29);
             this.pictReserva.Name = "pictReserva";
             this.pictReserva.Size = new System.Drawing.Size(504, 333);
