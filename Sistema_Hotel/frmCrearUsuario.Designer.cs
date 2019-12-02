@@ -1,6 +1,6 @@
 ﻿namespace Sistema_Hotel
 {
-    partial class frmIniciarSesion
+    partial class frmCrearUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.btnIniciar = new System.Windows.Forms.Button();
+            this.btnCrear = new System.Windows.Forms.Button();
+            this.lblContraseña = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -39,68 +39,67 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(80, 47);
+            this.lblUsuario.Location = new System.Drawing.Point(50, 46);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(49, 13);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario :";
             // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(105, 43);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(104, 20);
+            this.txtUsuario.TabIndex = 1;
+            // 
+            // btnCrear
+            // 
+            this.btnCrear.Location = new System.Drawing.Point(53, 140);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(75, 23);
+            this.btnCrear.TabIndex = 2;
+            this.btnCrear.Text = "Crear";
+            this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
+            // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Location = new System.Drawing.Point(79, 84);
+            this.lblContraseña.Location = new System.Drawing.Point(50, 95);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(67, 13);
-            this.lblContraseña.TabIndex = 1;
+            this.lblContraseña.TabIndex = 3;
             this.lblContraseña.Text = "Contraseña :";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(135, 44);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(111, 20);
-            this.txtUsuario.TabIndex = 2;
-            // 
-            // btnIniciar
-            // 
-            this.btnIniciar.Location = new System.Drawing.Point(82, 120);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
-            this.btnIniciar.TabIndex = 3;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = true;
-            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(171, 120);
+            this.btnCancelar.Location = new System.Drawing.Point(134, 140);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(152, 81);
+            this.txtContraseña.Location = new System.Drawing.Point(123, 92);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(94, 20);
+            this.txtContraseña.Size = new System.Drawing.Size(86, 20);
             this.txtContraseña.TabIndex = 5;
             // 
-            // frmIniciarSesion
+            // frmCrearUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 207);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnIniciar);
-            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblContraseña);
+            this.Controls.Add(this.btnCrear);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblUsuario);
-            this.Name = "frmIniciarSesion";
-            this.Text = "frmIniciarSesion";
+            this.Name = "frmCrearUsuario";
+            this.Text = "frmCrearUsuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,9 +108,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtContraseña;
     }
