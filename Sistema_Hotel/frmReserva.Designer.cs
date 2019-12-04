@@ -387,6 +387,7 @@
             // 
             // pictReserva
             // 
+            this.pictReserva.BackgroundImage = global::Sistema_Hotel.Properties.Resources.hospitality_uniform_suppliers_uk1;
             this.pictReserva.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictReserva.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictReserva.ErrorImage = null;
@@ -450,7 +451,7 @@
         private System.Windows.Forms.Label lblFechaHoraEntradaReserva;
         private System.Windows.Forms.Label lblCodRerseva;
         private System.Windows.Forms.GroupBox gbxReserva;
-        private System.Windows.Forms.PictureBox pictReserva;
         private System.Windows.Forms.Label lblListadoReservas;
+        private System.Windows.Forms.PictureBox pictReserva;
     }
 }

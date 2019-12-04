@@ -36,9 +36,12 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSetClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +112,12 @@
     <Compile Include="frmRegistrador.Designer.cs">
       <DependentUpon>frmRegistrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReserva.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +159,9 @@
     <EmbeddedResource Include="frmRegistrador.resx">
       <DependentUpon>frmRegistrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReserva.resx">
       <DependentUpon>frmReserva.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +178,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReporteClientes.rdlc" />
+    <None Include="DataSetClientes.xsc">
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetClientes.xss">
+      <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -338,6 +367,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Imagen\Pngtrevector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\hospitality uniform suppliers uk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\hospitality uniform suppliers uk - copia.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

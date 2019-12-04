@@ -53,6 +53,7 @@
             this.lblNombreCliente = new System.Windows.Forms.Label();
             this.lblCodCliente = new System.Windows.Forms.Label();
             this.mnsMoverFormulario = new System.Windows.Forms.MenuStrip();
+            this.btnGenerarListado = new System.Windows.Forms.Button();
             this.gbxRegistroClientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictCliente)).BeginInit();
             this.SuspendLayout();
@@ -390,6 +391,24 @@
             this.mnsMoverFormulario.Text = "menuStrip1";
             this.mnsMoverFormulario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mnsMoverFormulario_MouseDown);
             // 
+            // btnGenerarListado
+            // 
+            this.btnGenerarListado.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenerarListado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerarListado.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarListado.ForeColor = System.Drawing.Color.Black;
+            this.btnGenerarListado.Location = new System.Drawing.Point(514, 334);
+            this.btnGenerarListado.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenerarListado.Name = "btnGenerarListado";
+            this.btnGenerarListado.Size = new System.Drawing.Size(106, 30);
+            this.btnGenerarListado.TabIndex = 37;
+            this.btnGenerarListado.Text = "Generar Listado";
+            this.btnGenerarListado.UseVisualStyleBackColor = false;
+            this.btnGenerarListado.Click += new System.EventHandler(this.btnGenerarListado_Click);
+            // 
             // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -397,6 +416,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(845, 533);
+            this.Controls.Add(this.btnGenerarListado);
             this.Controls.Add(this.gbxRegistroClientes);
             this.Controls.Add(this.lblListadoClientes);
             this.Controls.Add(this.btnEliminar);
@@ -451,6 +471,7 @@
         private System.Windows.Forms.Label lblNombreCliente;
         private System.Windows.Forms.Label lblCodCliente;
         private System.Windows.Forms.MenuStrip mnsMoverFormulario;
+        private System.Windows.Forms.Button btnGenerarListado;
     }
 }
 

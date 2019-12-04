@@ -363,6 +363,16 @@ namespace Sistema_Hotel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _06 {
+            get {
+                object obj = ResourceManager.GetObject("06", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _14597 {
             get {
                 object obj = ResourceManager.GetObject("14597", resourceCulture);
@@ -376,6 +386,16 @@ namespace Sistema_Hotel.Properties {
         internal static System.Drawing.Bitmap _145971 {
             get {
                 object obj = ResourceManager.GetObject("145971", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _145972 {
+            get {
+                object obj = ResourceManager.GetObject("145972", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -486,6 +506,66 @@ namespace Sistema_Hotel.Properties {
         internal static System.Drawing.Bitmap customer_person_people_man_user_client_1629 {
             get {
                 object obj = ResourceManager.GetObject("customer_person_people_man_user_client_1629", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hospitality_uniform_suppliers_uk {
+            get {
+                object obj = ResourceManager.GetObject("hospitality uniform suppliers uk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hospitality_uniform_suppliers_uk___copia {
+            get {
+                object obj = ResourceManager.GetObject("hospitality uniform suppliers uk - copia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hospitality_uniform_suppliers_uk1 {
+            get {
+                object obj = ResourceManager.GetObject("hospitality uniform suppliers uk1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hospitality_uniform_suppliers_uk2 {
+            get {
+                object obj = ResourceManager.GetObject("hospitality uniform suppliers uk2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hospitality_uniform_suppliers_uk3 {
+            get {
+                object obj = ResourceManager.GetObject("hospitality uniform suppliers uk3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hospitality_uniform_suppliers_uk4 {
+            get {
+                object obj = ResourceManager.GetObject("hospitality uniform suppliers uk4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
