@@ -239,10 +239,6 @@ namespace Sistema_Hotel
             h = this.Height;
         }
 
-        private void btnGenerarListado_Click(object sender, EventArgs e)
-        {
-            frmReportes frmreportes = new frmReportes();
-            frmreportes.Show();
-        }
+       
     }
 }

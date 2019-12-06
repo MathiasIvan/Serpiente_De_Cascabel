@@ -407,7 +407,7 @@
             this.btnGenerarListado.TabIndex = 37;
             this.btnGenerarListado.Text = "Generar Listado";
             this.btnGenerarListado.UseVisualStyleBackColor = false;
-            this.btnGenerarListado.Click += new System.EventHandler(this.btnGenerarListado_Click);
+            //this.btnGenerarListado.Click += new System.EventHandler(this.btnGenerarListado_Click);
             // 
             // frmCliente
             // 
