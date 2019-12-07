@@ -16,7 +16,7 @@ namespace Sistema_Hotel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmListado_Registradores());
+            Application.Run(new frmIniciarSesion());
         }
     }
 }
