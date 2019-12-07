@@ -239,6 +239,10 @@ namespace Sistema_Hotel
             h = this.Height;
         }
 
-       
+        private void btnGenerarListado_Click(object sender, EventArgs e)
+        {
+            frmListado_Clientes frmlistadoclientes = new frmListado_Clientes();
+            frmlistadoclientes.Show();
+        }
     }
 }

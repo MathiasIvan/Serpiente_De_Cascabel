@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Clases_Hotel;
+using System.Runtime.InteropServices;
 
 namespace Sistema_Hotel
 {
@@ -19,6 +20,20 @@ namespace Sistema_Hotel
             InitializeComponent();
         }
 
+        #region
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        Rectangle sizeGripRectangle;
+        bool inSizeDrag = false;
+        const int GRIP_SIZE = 15;
+
+        int w = 0;
+        int h = 0;
+    #endregion
 
         private void frmEstadoHabitacion_Load(object sender, EventArgs e)
         {
@@ -188,5 +203,11 @@ namespace Sistema_Hotel
             btnActualizar.Enabled = false;
         }
 
+        private void mnsMoverFormulario_MouseDown(object sender, MouseEventArgs e)
+        {
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            w = this.Width;
+            h = this.Height;
+        }
     }
 }

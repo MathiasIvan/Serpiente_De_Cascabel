@@ -1,6 +1,6 @@
 ﻿namespace Sistema_Hotel
 {
-    partial class frmListado_Habitaciones
+    partial class frmEstado_Habitaciones
     {
         /// <summary>
         /// Required designer variable.
@@ -29,31 +29,27 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.Listado_Habitaciones1 = new Sistema_Hotel.Listado_Habitaciones();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.Listado_Habitaciones1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(701, 525);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(471, 415);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // frmListado_Habitaciones
+            // frmEstado_Habitaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 525);
+            this.ClientSize = new System.Drawing.Size(471, 415);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "frmListado_Habitaciones";
-            this.Text = "Reporte de Registradores";
+            this.Name = "frmEstado_Habitaciones";
+            this.Text = "frmEstado_Habitaciones";
             this.ResumeLayout(false);
 
         }
@@ -61,7 +57,5 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private Listado_Habitaciones Listado_Habitaciones1;
-        // private Listado_Habitaciones Listado_Habitaciones1;
     }
 }

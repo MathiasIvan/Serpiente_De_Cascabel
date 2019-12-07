@@ -83,6 +83,12 @@
     <Compile Include="frmEstadoHabitacion.Designer.cs">
       <DependentUpon>frmEstadoHabitacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEstado_Habitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstado_Habitaciones.Designer.cs">
+      <DependentUpon>frmEstado_Habitaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGastos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +107,29 @@
     <Compile Include="frmIniciarSesion.Designer.cs">
       <DependentUpon>frmIniciarSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListado_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListado_Clientes.Designer.cs">
+      <DependentUpon>frmListado_Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListado_Habitaciones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmListado_Habitaciones.Designer.cs">
       <DependentUpon>frmListado_Habitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListado_Registradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListado_Registradores.Designer.cs">
+      <DependentUpon>frmListado_Registradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListado_Tipo_Habitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListado_Tipo_Habitaciones.Designer.cs">
+      <DependentUpon>frmListado_Tipo_Habitaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenu_Principal.cs">
       <SubType>Form</SubType>
@@ -131,10 +155,34 @@
     <Compile Include="frmTipoHabitacion.Designer.cs">
       <DependentUpon>frmTipoHabitacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Listado_Clientes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Listado_Clientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Listado_Estado_Habitaciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Listado_Estado_Habitaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Listado_Habitaciones.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Listado_Habitaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Listado_Registradores.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Listado_Registradores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Listado_Tipo_Habitaciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Listado_Tipo_Habitaciones.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
@@ -151,6 +199,9 @@
     <EmbeddedResource Include="frmEstadoHabitacion.resx">
       <DependentUpon>frmEstadoHabitacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEstado_Habitaciones.resx">
+      <DependentUpon>frmEstado_Habitaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGastos.resx">
       <DependentUpon>frmGastos.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,8 +211,17 @@
     <EmbeddedResource Include="frmIniciarSesion.resx">
       <DependentUpon>frmIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListado_Clientes.resx">
+      <DependentUpon>frmListado_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListado_Habitaciones.resx">
       <DependentUpon>frmListado_Habitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListado_Registradores.resx">
+      <DependentUpon>frmListado_Registradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListado_Tipo_Habitaciones.resx">
+      <DependentUpon>frmListado_Tipo_Habitaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu_Principal.resx">
       <DependentUpon>frmMenu_Principal.cs</DependentUpon>
@@ -175,9 +235,25 @@
     <EmbeddedResource Include="frmTipoHabitacion.resx">
       <DependentUpon>frmTipoHabitacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Clientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_Clientes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Estado_Habitaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_Estado_Habitaciones.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Listado_Habitaciones.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Listado_Habitaciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Registradores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_Registradores.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Tipo_Habitaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_Tipo_Habitaciones.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -189,7 +265,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ReporteClientes.rdlc" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

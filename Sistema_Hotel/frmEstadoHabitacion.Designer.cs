@@ -43,6 +43,7 @@
             this.gbxEstadoHabitacion = new System.Windows.Forms.GroupBox();
             this.pictEstadoHabitacion = new System.Windows.Forms.PictureBox();
             this.lblListadoEstadoHabitaciones = new System.Windows.Forms.Label();
+            this.mnsMoverFormulario = new System.Windows.Forms.MenuStrip();
             this.gbxEstadoHabitacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictEstadoHabitacion)).BeginInit();
             this.SuspendLayout();
@@ -259,6 +260,17 @@
             this.lblListadoEstadoHabitaciones.TabIndex = 42;
             this.lblListadoEstadoHabitaciones.Text = "Listado de Estado / Habitaciones";
             // 
+            // mnsMoverFormulario
+            // 
+            this.mnsMoverFormulario.BackColor = System.Drawing.Color.Transparent;
+            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mnsMoverFormulario.Location = new System.Drawing.Point(0, 0);
+            this.mnsMoverFormulario.Name = "mnsMoverFormulario";
+            this.mnsMoverFormulario.Size = new System.Drawing.Size(555, 396);
+            this.mnsMoverFormulario.TabIndex = 43;
+            this.mnsMoverFormulario.Text = "menuStrip1";
+            this.mnsMoverFormulario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mnsMoverFormulario_MouseDown);
+            // 
             // frmEstadoHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,8 +285,10 @@
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lstEstadoHabitacion);
+            this.Controls.Add(this.mnsMoverFormulario);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.mnsMoverFormulario;
             this.Name = "frmEstadoHabitacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento Estado / Habitación";
@@ -304,5 +318,6 @@
         private System.Windows.Forms.GroupBox gbxEstadoHabitacion;
         private System.Windows.Forms.PictureBox pictEstadoHabitacion;
         private System.Windows.Forms.Label lblListadoEstadoHabitaciones;
+        private System.Windows.Forms.MenuStrip mnsMoverFormulario;
     }
 }
