@@ -220,5 +220,14 @@ namespace Sistema_Hotel
         {
             LimpiarFormulario();
         }
+
+        private void dtpFechaHoraSalidaReserva_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtpFechaHoraSalidaReserva.Value.Date < dtpFechaHoraEntradaReserva.Value.Date)
+            {
+                MessageBox.Show("La Fecha de Salida no puede ser menor a la Fecha de Entrada.");
+                dtpFechaHoraSalidaReserva.Focus();
+            }
+        }
     }
 }

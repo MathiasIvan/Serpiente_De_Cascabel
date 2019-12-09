@@ -254,10 +254,10 @@
             // mnsMoverFormulario
             // 
             this.mnsMoverFormulario.BackColor = System.Drawing.Color.Transparent;
-            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Left;
+            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mnsMoverFormulario.Location = new System.Drawing.Point(0, 0);
             this.mnsMoverFormulario.Name = "mnsMoverFormulario";
-            this.mnsMoverFormulario.Size = new System.Drawing.Size(30, 431);
+            this.mnsMoverFormulario.Size = new System.Drawing.Size(558, 431);
             this.mnsMoverFormulario.TabIndex = 43;
             this.mnsMoverFormulario.Text = "menuStrip1";
             this.mnsMoverFormulario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mnsMoverFormulario_MouseDown);
@@ -297,7 +297,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(555, 431);
+            this.ClientSize = new System.Drawing.Size(558, 431);
             this.Controls.Add(this.btnGenerarListado);
             this.Controls.Add(this.lblListadoEstadoHabitaciones);
             this.Controls.Add(this.gbxEstadoHabitacion);

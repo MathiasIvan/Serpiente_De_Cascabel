@@ -53,8 +53,8 @@
             this.lblFechaHoraEntradaReserva = new System.Windows.Forms.Label();
             this.lblCodRerseva = new System.Windows.Forms.Label();
             this.gbxReserva = new System.Windows.Forms.GroupBox();
-            this.lblListadoReservas = new System.Windows.Forms.Label();
             this.pictReserva = new System.Windows.Forms.PictureBox();
+            this.lblListadoReservas = new System.Windows.Forms.Label();
             this.gbxReserva.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictReserva)).BeginInit();
             this.SuspendLayout();
@@ -234,6 +234,7 @@
             this.dtpFechaHoraSalidaReserva.Name = "dtpFechaHoraSalidaReserva";
             this.dtpFechaHoraSalidaReserva.Size = new System.Drawing.Size(146, 21);
             this.dtpFechaHoraSalidaReserva.TabIndex = 23;
+            this.dtpFechaHoraSalidaReserva.ValueChanged += new System.EventHandler(this.dtpFechaHoraSalidaReserva_ValueChanged);
             // 
             // cboHabitacionReserva
             // 
@@ -375,16 +376,6 @@
             this.gbxReserva.TabStop = false;
             this.gbxReserva.Text = "Nomina de Reservas";
             // 
-            // lblListadoReservas
-            // 
-            this.lblListadoReservas.AutoSize = true;
-            this.lblListadoReservas.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListadoReservas.Location = new System.Drawing.Point(360, 409);
-            this.lblListadoReservas.Name = "lblListadoReservas";
-            this.lblListadoReservas.Size = new System.Drawing.Size(115, 16);
-            this.lblListadoReservas.TabIndex = 43;
-            this.lblListadoReservas.Text = "Listado de Reservas";
-            // 
             // pictReserva
             // 
             this.pictReserva.BackgroundImage = global::Sistema_Hotel.Properties.Resources.hospitality_uniform_suppliers_uk1;
@@ -396,6 +387,16 @@
             this.pictReserva.Size = new System.Drawing.Size(504, 333);
             this.pictReserva.TabIndex = 37;
             this.pictReserva.TabStop = false;
+            // 
+            // lblListadoReservas
+            // 
+            this.lblListadoReservas.AutoSize = true;
+            this.lblListadoReservas.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListadoReservas.Location = new System.Drawing.Point(360, 409);
+            this.lblListadoReservas.Name = "lblListadoReservas";
+            this.lblListadoReservas.Size = new System.Drawing.Size(115, 16);
+            this.lblListadoReservas.TabIndex = 43;
+            this.lblListadoReservas.Text = "Listado de Reservas";
             // 
             // frmReserva
             // 
