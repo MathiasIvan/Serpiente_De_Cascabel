@@ -455,6 +455,12 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\occupied-vacant-two-sided-door-hang-tag-tg-1487_pl %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\71Tvs3XyjAL._SL1500_.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

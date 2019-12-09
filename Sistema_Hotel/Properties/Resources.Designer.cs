@@ -413,6 +413,16 @@ namespace Sistema_Hotel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _71Tvs3XyjAL__SL1500_ {
+            get {
+                object obj = ResourceManager.GetObject("71Tvs3XyjAL._SL1500_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Banking_00017_A_icon_icons_com_59837 {
             get {
                 object obj = ResourceManager.GetObject("Banking_00017_A_icon-icons.com_59837", resourceCulture);
@@ -666,6 +676,26 @@ namespace Sistema_Hotel.Properties {
         internal static System.Drawing.Bitmap Minimize_Window_2_48px1 {
             get {
                 object obj = ResourceManager.GetObject("Minimize Window_2 48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap occupied_vacant_two_sided_door_hang_tag_tg_1487_pl__1_ {
+            get {
+                object obj = ResourceManager.GetObject("occupied-vacant-two-sided-door-hang-tag-tg-1487_pl (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap occupied_vacant_two_sided_door_hang_tag_tg_1487_pl__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("occupied-vacant-two-sided-door-hang-tag-tg-1487_pl (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
