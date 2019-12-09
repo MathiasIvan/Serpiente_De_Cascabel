@@ -1,6 +1,6 @@
 ﻿namespace Sistema_Hotel
 {
-    partial class frmEstado_Habitaciones
+    partial class frmListado_Estado_Habitaciones
     {
         /// <summary>
         /// Required designer variable.

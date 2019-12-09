@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_Hotel
 {
-    public partial class frmEstado_Habitaciones : Form
+    public partial class frmListado_Clientes : Form
     {
-        public frmEstado_Habitaciones()
+        public frmListado_Clientes()
         {
             InitializeComponent();
         }

@@ -83,11 +83,11 @@
     <Compile Include="frmEstadoHabitacion.Designer.cs">
       <DependentUpon>frmEstadoHabitacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEstado_Habitaciones.cs">
+    <Compile Include="frmListado_Estado_Habitaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEstado_Habitaciones.Designer.cs">
-      <DependentUpon>frmEstado_Habitaciones.cs</DependentUpon>
+    <Compile Include="frmListado_Estado_Habitaciones.Designer.cs">
+      <DependentUpon>frmListado_Estado_Habitaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGastos.cs">
       <SubType>Form</SubType>
@@ -199,8 +199,8 @@
     <EmbeddedResource Include="frmEstadoHabitacion.resx">
       <DependentUpon>frmEstadoHabitacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEstado_Habitaciones.resx">
-      <DependentUpon>frmEstado_Habitaciones.cs</DependentUpon>
+    <EmbeddedResource Include="frmListado_Estado_Habitaciones.resx">
+      <DependentUpon>frmListado_Estado_Habitaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGastos.resx">
       <DependentUpon>frmGastos.cs</DependentUpon>

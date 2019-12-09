@@ -209,5 +209,11 @@ namespace Sistema_Hotel
             w = this.Width;
             h = this.Height;
         }
+
+        private void btnGenerarListado_Click(object sender, EventArgs e)
+        {
+            frmListado_Estado_Habitaciones frmlistadoestadohabitaciones = new frmListado_Estado_Habitaciones();
+            frmlistadoestadohabitaciones.Show();
+        }
     }
 }
