@@ -40,10 +40,11 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.pictTipoHabitacion = new System.Windows.Forms.PictureBox();
             this.lblListadoTipoHabitacion = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.mnsMoverFormulario = new System.Windows.Forms.MenuStrip();
-            this.pictTipoHabitacion = new System.Windows.Forms.PictureBox();
+            this.btnGenerarListado = new System.Windows.Forms.Button();
             this.gbxTipoHabitacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictTipoHabitacion)).BeginInit();
             this.SuspendLayout();
@@ -57,9 +58,9 @@
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(457, 310);
+            this.btnEliminar.Location = new System.Drawing.Point(441, 308);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(88, 30);
+            this.btnEliminar.Size = new System.Drawing.Size(104, 30);
             this.btnEliminar.TabIndex = 19;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -74,9 +75,9 @@
             this.btnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(457, 272);
+            this.btnActualizar.Location = new System.Drawing.Point(441, 270);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(88, 30);
+            this.btnActualizar.Size = new System.Drawing.Size(104, 30);
             this.btnActualizar.TabIndex = 18;
             this.btnActualizar.Text = "&Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
@@ -91,9 +92,9 @@
             this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(457, 232);
+            this.btnAgregar.Location = new System.Drawing.Point(441, 232);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(88, 30);
+            this.btnAgregar.Size = new System.Drawing.Size(104, 30);
             this.btnAgregar.TabIndex = 17;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -108,7 +109,7 @@
             this.lstTipoHabitacion.ItemHeight = 16;
             this.lstTipoHabitacion.Location = new System.Drawing.Point(12, 232);
             this.lstTipoHabitacion.Name = "lstTipoHabitacion";
-            this.lstTipoHabitacion.Size = new System.Drawing.Size(428, 148);
+            this.lstTipoHabitacion.Size = new System.Drawing.Size(417, 180);
             this.lstTipoHabitacion.TabIndex = 16;
             this.lstTipoHabitacion.TabStop = false;
             this.lstTipoHabitacion.Click += new System.EventHandler(this.lstTipoHabitacion_Click);
@@ -221,6 +222,18 @@
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click_1);
             // 
+            // pictTipoHabitacion
+            // 
+            this.pictTipoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.wallhaven_n673ww2;
+            this.pictTipoHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictTipoHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictTipoHabitacion.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictTipoHabitacion.Location = new System.Drawing.Point(297, 30);
+            this.pictTipoHabitacion.Name = "pictTipoHabitacion";
+            this.pictTipoHabitacion.Size = new System.Drawing.Size(222, 140);
+            this.pictTipoHabitacion.TabIndex = 20;
+            this.pictTipoHabitacion.TabStop = false;
+            // 
             // lblListadoTipoHabitacion
             // 
             this.lblListadoTipoHabitacion.AutoSize = true;
@@ -240,43 +253,52 @@
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Location = new System.Drawing.Point(457, 350);
+            this.btnSalir.Location = new System.Drawing.Point(441, 382);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(88, 30);
+            this.btnSalir.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnSalir.Size = new System.Drawing.Size(104, 30);
             this.btnSalir.TabIndex = 23;
-            this.btnSalir.Text = "&Salir";
+            this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             // 
             // mnsMoverFormulario
             // 
             this.mnsMoverFormulario.BackColor = System.Drawing.Color.Transparent;
+            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mnsMoverFormulario.Location = new System.Drawing.Point(0, 0);
             this.mnsMoverFormulario.Name = "mnsMoverFormulario";
-            this.mnsMoverFormulario.Size = new System.Drawing.Size(555, 24);
+            this.mnsMoverFormulario.Size = new System.Drawing.Size(555, 431);
             this.mnsMoverFormulario.TabIndex = 24;
             this.mnsMoverFormulario.Text = "menuStrip1";
             this.mnsMoverFormulario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mnsMoverFormulario_MouseDown);
             // 
-            // pictTipoHabitacion
+            // btnGenerarListado
             // 
-            this.pictTipoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.wallhaven_n673ww2;
-            this.pictTipoHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictTipoHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictTipoHabitacion.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictTipoHabitacion.Location = new System.Drawing.Point(297, 30);
-            this.pictTipoHabitacion.Name = "pictTipoHabitacion";
-            this.pictTipoHabitacion.Size = new System.Drawing.Size(222, 140);
-            this.pictTipoHabitacion.TabIndex = 20;
-            this.pictTipoHabitacion.TabStop = false;
+            this.btnGenerarListado.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenerarListado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerarListado.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarListado.ForeColor = System.Drawing.Color.Black;
+            this.btnGenerarListado.Location = new System.Drawing.Point(441, 345);
+            this.btnGenerarListado.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenerarListado.Name = "btnGenerarListado";
+            this.btnGenerarListado.Size = new System.Drawing.Size(104, 30);
+            this.btnGenerarListado.TabIndex = 25;
+            this.btnGenerarListado.Text = "Generar Listado";
+            this.btnGenerarListado.UseVisualStyleBackColor = false;
+            this.btnGenerarListado.Click += new System.EventHandler(this.btnGenerarListado_Click);
             // 
             // frmTipoHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(555, 396);
+            this.ClientSize = new System.Drawing.Size(555, 431);
+            this.Controls.Add(this.btnGenerarListado);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblListadoTipoHabitacion);
             this.Controls.Add(this.gbxTipoHabitacion);
@@ -318,5 +340,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.MenuStrip mnsMoverFormulario;
+        private System.Windows.Forms.Button btnGenerarListado;
     }
 }
