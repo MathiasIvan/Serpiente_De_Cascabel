@@ -76,7 +76,7 @@ namespace Sistema_Hotel
         private void pictCliente_Click(object sender, EventArgs e)
         {
             frmCliente frmcliente = new frmCliente();
-            frmcliente.Show();
+            frmcliente.Show();           
         }
 
         private void pictEstadoHabitacion_Click(object sender, EventArgs e)
@@ -95,6 +95,7 @@ namespace Sistema_Hotel
         {
             frmRegistrador frmregistrador = new frmRegistrador();
             frmregistrador.Show();
+
         }
 
         private void pictHabitacion_Click(object sender, EventArgs e)
@@ -121,5 +122,7 @@ namespace Sistema_Hotel
             w = this.Width;
             h = this.Height;
         }
+
+        
     }
 }

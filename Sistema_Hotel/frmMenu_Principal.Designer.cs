@@ -30,14 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.MenuTop = new System.Windows.Forms.Panel();
-            this.pictSalir = new System.Windows.Forms.PictureBox();
-            this.pictMazimizar = new System.Windows.Forms.PictureBox();
-            this.pictMinimizar = new System.Windows.Forms.PictureBox();
-            this.pictRestaurar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mnsMoverFormulario = new System.Windows.Forms.MenuStrip();
             this.SidebarWrapper = new System.Windows.Forms.Panel();
+            this.HoraFecha = new System.Windows.Forms.Timer(this.components);
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
             this.pictGastos = new System.Windows.Forms.PictureBox();
             this.pictReserva = new System.Windows.Forms.PictureBox();
             this.pictHabitacion = new System.Windows.Forms.PictureBox();
@@ -45,15 +43,12 @@
             this.pictTipoHabitacion = new System.Windows.Forms.PictureBox();
             this.pictEstadoHabitacion = new System.Windows.Forms.PictureBox();
             this.pictCliente = new System.Windows.Forms.PictureBox();
-            this.HoraFecha = new System.Windows.Forms.Timer(this.components);
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
+            this.pictSalir = new System.Windows.Forms.PictureBox();
+            this.pictMazimizar = new System.Windows.Forms.PictureBox();
+            this.pictMinimizar = new System.Windows.Forms.PictureBox();
+            this.pictRestaurar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MenuTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSalir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictMazimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SidebarWrapper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictGastos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictReserva)).BeginInit();
@@ -62,6 +57,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictTipoHabitacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictEstadoHabitacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictMazimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuTop
@@ -81,79 +81,16 @@
             this.MenuTop.Size = new System.Drawing.Size(1100, 55);
             this.MenuTop.TabIndex = 0;
             // 
-            // pictSalir
-            // 
-            this.pictSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictSalir.BackgroundImage = global::Sistema_Hotel.Properties.Resources.Close_Window__2_48px2;
-            this.pictSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictSalir.Location = new System.Drawing.Point(1056, 13);
-            this.pictSalir.Name = "pictSalir";
-            this.pictSalir.Size = new System.Drawing.Size(30, 30);
-            this.pictSalir.TabIndex = 5;
-            this.pictSalir.TabStop = false;
-            this.pictSalir.Click += new System.EventHandler(this.pictSalir_Click);
-            // 
-            // pictMazimizar
-            // 
-            this.pictMazimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictMazimizar.BackgroundImage = global::Sistema_Hotel.Properties.Resources.Maximize_Window_2_48px2;
-            this.pictMazimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictMazimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictMazimizar.Location = new System.Drawing.Point(1020, 13);
-            this.pictMazimizar.Name = "pictMazimizar";
-            this.pictMazimizar.Size = new System.Drawing.Size(30, 30);
-            this.pictMazimizar.TabIndex = 4;
-            this.pictMazimizar.TabStop = false;
-            this.pictMazimizar.Click += new System.EventHandler(this.pictMazimizar_Click);
-            // 
-            // pictMinimizar
-            // 
-            this.pictMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictMinimizar.BackgroundImage = global::Sistema_Hotel.Properties.Resources.Minimize_Window_2_48px1;
-            this.pictMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictMinimizar.Location = new System.Drawing.Point(984, 13);
-            this.pictMinimizar.Name = "pictMinimizar";
-            this.pictMinimizar.Size = new System.Drawing.Size(30, 30);
-            this.pictMinimizar.TabIndex = 3;
-            this.pictMinimizar.TabStop = false;
-            this.pictMinimizar.Click += new System.EventHandler(this.pictMinimizar_Click);
-            // 
-            // pictRestaurar
-            // 
-            this.pictRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictRestaurar.BackgroundImage = global::Sistema_Hotel.Properties.Resources.Restore_Window_2_48px1;
-            this.pictRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictRestaurar.Location = new System.Drawing.Point(1020, 13);
-            this.pictRestaurar.Name = "pictRestaurar";
-            this.pictRestaurar.Size = new System.Drawing.Size(30, 30);
-            this.pictRestaurar.TabIndex = 2;
-            this.pictRestaurar.TabStop = false;
-            this.pictRestaurar.Visible = false;
-            this.pictRestaurar.Click += new System.EventHandler(this.pictRestaurar_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(64, 14);
+            this.label1.Location = new System.Drawing.Point(64, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(315, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Sistema Hotel - Menu Principal";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Sistema_Hotel.Properties.Resources._001_hotel;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 38);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // mnsMoverFormulario
             // 
@@ -184,90 +121,6 @@
             this.SidebarWrapper.Size = new System.Drawing.Size(57, 645);
             this.SidebarWrapper.TabIndex = 1;
             // 
-            // pictGastos
-            // 
-            this.pictGastos.BackgroundImage = global::Sistema_Hotel.Properties.Resources._009_pago1;
-            this.pictGastos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictGastos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictGastos.Location = new System.Drawing.Point(8, 139);
-            this.pictGastos.Name = "pictGastos";
-            this.pictGastos.Size = new System.Drawing.Size(38, 35);
-            this.pictGastos.TabIndex = 7;
-            this.pictGastos.TabStop = false;
-            this.pictGastos.Click += new System.EventHandler(this.pictGastos_Click);
-            // 
-            // pictReserva
-            // 
-            this.pictReserva.BackgroundImage = global::Sistema_Hotel.Properties.Resources._003_bolso1;
-            this.pictReserva.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictReserva.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictReserva.Location = new System.Drawing.Point(8, 200);
-            this.pictReserva.Name = "pictReserva";
-            this.pictReserva.Size = new System.Drawing.Size(38, 35);
-            this.pictReserva.TabIndex = 6;
-            this.pictReserva.TabStop = false;
-            this.pictReserva.Click += new System.EventHandler(this.pictReserva_Click);
-            // 
-            // pictHabitacion
-            // 
-            this.pictHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.cama;
-            this.pictHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictHabitacion.Location = new System.Drawing.Point(8, 261);
-            this.pictHabitacion.Name = "pictHabitacion";
-            this.pictHabitacion.Size = new System.Drawing.Size(38, 35);
-            this.pictHabitacion.TabIndex = 5;
-            this.pictHabitacion.TabStop = false;
-            this.pictHabitacion.Click += new System.EventHandler(this.pictHabitacion_Click);
-            // 
-            // pictRegistrador
-            // 
-            this.pictRegistrador.BackgroundImage = global::Sistema_Hotel.Properties.Resources._001_team1;
-            this.pictRegistrador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictRegistrador.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictRegistrador.Location = new System.Drawing.Point(8, 78);
-            this.pictRegistrador.Name = "pictRegistrador";
-            this.pictRegistrador.Size = new System.Drawing.Size(38, 35);
-            this.pictRegistrador.TabIndex = 4;
-            this.pictRegistrador.TabStop = false;
-            this.pictRegistrador.Click += new System.EventHandler(this.pictRegistrador_Click);
-            // 
-            // pictTipoHabitacion
-            // 
-            this.pictTipoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.person_user_customer_man_male_man_boy_people_1687;
-            this.pictTipoHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictTipoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictTipoHabitacion.Location = new System.Drawing.Point(8, 322);
-            this.pictTipoHabitacion.Name = "pictTipoHabitacion";
-            this.pictTipoHabitacion.Size = new System.Drawing.Size(38, 35);
-            this.pictTipoHabitacion.TabIndex = 3;
-            this.pictTipoHabitacion.TabStop = false;
-            this.pictTipoHabitacion.Click += new System.EventHandler(this.pictTipoHabitacion_Click);
-            // 
-            // pictEstadoHabitacion
-            // 
-            this.pictEstadoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.hotel;
-            this.pictEstadoHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictEstadoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictEstadoHabitacion.Location = new System.Drawing.Point(8, 383);
-            this.pictEstadoHabitacion.Name = "pictEstadoHabitacion";
-            this.pictEstadoHabitacion.Size = new System.Drawing.Size(38, 35);
-            this.pictEstadoHabitacion.TabIndex = 2;
-            this.pictEstadoHabitacion.TabStop = false;
-            this.pictEstadoHabitacion.Click += new System.EventHandler(this.pictEstadoHabitacion_Click);
-            // 
-            // pictCliente
-            // 
-            this.pictCliente.BackgroundImage = global::Sistema_Hotel.Properties.Resources._002_cliente;
-            this.pictCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictCliente.Location = new System.Drawing.Point(8, 17);
-            this.pictCliente.Name = "pictCliente";
-            this.pictCliente.Size = new System.Drawing.Size(38, 35);
-            this.pictCliente.TabIndex = 1;
-            this.pictCliente.TabStop = false;
-            this.pictCliente.Click += new System.EventHandler(this.pictCliente_Click);
-            // 
             // HoraFecha
             // 
             this.HoraFecha.Enabled = true;
@@ -296,6 +149,153 @@
             this.lblFecha.TabIndex = 6;
             this.lblFecha.Text = "label3";
             // 
+            // pictGastos
+            // 
+            this.pictGastos.BackgroundImage = global::Sistema_Hotel.Properties.Resources._009_pago1;
+            this.pictGastos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictGastos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictGastos.Location = new System.Drawing.Point(8, 131);
+            this.pictGastos.Name = "pictGastos";
+            this.pictGastos.Size = new System.Drawing.Size(38, 35);
+            this.pictGastos.TabIndex = 7;
+            this.pictGastos.TabStop = false;
+            this.pictGastos.Click += new System.EventHandler(this.pictGastos_Click);
+            // 
+            // pictReserva
+            // 
+            this.pictReserva.BackgroundImage = global::Sistema_Hotel.Properties.Resources._003_bolso1;
+            this.pictReserva.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictReserva.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictReserva.Location = new System.Drawing.Point(8, 192);
+            this.pictReserva.Name = "pictReserva";
+            this.pictReserva.Size = new System.Drawing.Size(38, 35);
+            this.pictReserva.TabIndex = 6;
+            this.pictReserva.TabStop = false;
+            this.pictReserva.Click += new System.EventHandler(this.pictReserva_Click);
+            // 
+            // pictHabitacion
+            // 
+            this.pictHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.cama;
+            this.pictHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictHabitacion.Location = new System.Drawing.Point(8, 253);
+            this.pictHabitacion.Name = "pictHabitacion";
+            this.pictHabitacion.Size = new System.Drawing.Size(38, 35);
+            this.pictHabitacion.TabIndex = 5;
+            this.pictHabitacion.TabStop = false;
+            this.pictHabitacion.Click += new System.EventHandler(this.pictHabitacion_Click);
+            // 
+            // pictRegistrador
+            // 
+            this.pictRegistrador.BackgroundImage = global::Sistema_Hotel.Properties.Resources._001_team1;
+            this.pictRegistrador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictRegistrador.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictRegistrador.Location = new System.Drawing.Point(8, 70);
+            this.pictRegistrador.Name = "pictRegistrador";
+            this.pictRegistrador.Size = new System.Drawing.Size(38, 35);
+            this.pictRegistrador.TabIndex = 4;
+            this.pictRegistrador.TabStop = false;
+            this.pictRegistrador.Click += new System.EventHandler(this.pictRegistrador_Click);
+            // 
+            // pictTipoHabitacion
+            // 
+            this.pictTipoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.person_user_customer_man_male_man_boy_people_1687;
+            this.pictTipoHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictTipoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictTipoHabitacion.Location = new System.Drawing.Point(8, 314);
+            this.pictTipoHabitacion.Name = "pictTipoHabitacion";
+            this.pictTipoHabitacion.Size = new System.Drawing.Size(38, 35);
+            this.pictTipoHabitacion.TabIndex = 3;
+            this.pictTipoHabitacion.TabStop = false;
+            this.pictTipoHabitacion.Click += new System.EventHandler(this.pictTipoHabitacion_Click);
+            // 
+            // pictEstadoHabitacion
+            // 
+            this.pictEstadoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.hotel;
+            this.pictEstadoHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictEstadoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictEstadoHabitacion.Location = new System.Drawing.Point(8, 375);
+            this.pictEstadoHabitacion.Name = "pictEstadoHabitacion";
+            this.pictEstadoHabitacion.Size = new System.Drawing.Size(38, 35);
+            this.pictEstadoHabitacion.TabIndex = 2;
+            this.pictEstadoHabitacion.TabStop = false;
+            this.pictEstadoHabitacion.Click += new System.EventHandler(this.pictEstadoHabitacion_Click);
+            // 
+            // pictCliente
+            // 
+            this.pictCliente.BackgroundImage = global::Sistema_Hotel.Properties.Resources._002_cliente;
+            this.pictCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictCliente.Location = new System.Drawing.Point(8, 9);
+            this.pictCliente.Name = "pictCliente";
+            this.pictCliente.Size = new System.Drawing.Size(38, 35);
+            this.pictCliente.TabIndex = 1;
+            this.pictCliente.TabStop = false;
+            this.pictCliente.Click += new System.EventHandler(this.pictCliente_Click);
+            // 
+            // pictSalir
+            // 
+            this.pictSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictSalir.BackgroundImage = global::Sistema_Hotel.Properties.Resources.Close_Window__2_48px3;
+            this.pictSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictSalir.Location = new System.Drawing.Point(1056, 12);
+            this.pictSalir.Name = "pictSalir";
+            this.pictSalir.Size = new System.Drawing.Size(30, 30);
+            this.pictSalir.TabIndex = 5;
+            this.pictSalir.TabStop = false;
+            this.pictSalir.Click += new System.EventHandler(this.pictSalir_Click);
+            // 
+            // pictMazimizar
+            // 
+            this.pictMazimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictMazimizar.BackgroundImage = global::Sistema_Hotel.Properties.Resources.Maximize_Window_2_48px3;
+            this.pictMazimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictMazimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictMazimizar.Location = new System.Drawing.Point(1020, 12);
+            this.pictMazimizar.Name = "pictMazimizar";
+            this.pictMazimizar.Size = new System.Drawing.Size(30, 30);
+            this.pictMazimizar.TabIndex = 4;
+            this.pictMazimizar.TabStop = false;
+            this.pictMazimizar.Click += new System.EventHandler(this.pictMazimizar_Click);
+            // 
+            // pictMinimizar
+            // 
+            this.pictMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictMinimizar.BackgroundImage = global::Sistema_Hotel.Properties.Resources.Minimize_Window_2_48px2;
+            this.pictMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictMinimizar.Location = new System.Drawing.Point(984, 12);
+            this.pictMinimizar.Name = "pictMinimizar";
+            this.pictMinimizar.Size = new System.Drawing.Size(30, 30);
+            this.pictMinimizar.TabIndex = 3;
+            this.pictMinimizar.TabStop = false;
+            this.pictMinimizar.Click += new System.EventHandler(this.pictMinimizar_Click);
+            // 
+            // pictRestaurar
+            // 
+            this.pictRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictRestaurar.BackgroundImage = global::Sistema_Hotel.Properties.Resources.Restore_Window_2_48px2;
+            this.pictRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictRestaurar.Location = new System.Drawing.Point(1020, 12);
+            this.pictRestaurar.Name = "pictRestaurar";
+            this.pictRestaurar.Size = new System.Drawing.Size(30, 30);
+            this.pictRestaurar.TabIndex = 2;
+            this.pictRestaurar.TabStop = false;
+            this.pictRestaurar.Visible = false;
+            this.pictRestaurar.Click += new System.EventHandler(this.pictRestaurar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Sistema_Hotel.Properties.Resources.eye_of_ra;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 44);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmMenu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,14 +310,8 @@
             this.Name = "frmMenu_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenu_Principal";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MenuTop.ResumeLayout(false);
             this.MenuTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictSalir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictMazimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.SidebarWrapper.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictGastos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictReserva)).EndInit();
@@ -326,6 +320,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictTipoHabitacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictEstadoHabitacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictMazimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -73,6 +73,16 @@ namespace Sistema_Hotel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _001_god {
+            get {
+                object obj = ResourceManager.GetObject("001-god", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _001_hotel {
             get {
                 object obj = ResourceManager.GetObject("001-hotel", resourceCulture);
@@ -123,6 +133,66 @@ namespace Sistema_Hotel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _002_egypt {
+            get {
+                object obj = ResourceManager.GetObject("002-egypt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _002_egypt1 {
+            get {
+                object obj = ResourceManager.GetObject("002-egypt1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _002_egypt2 {
+            get {
+                object obj = ResourceManager.GetObject("002-egypt2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _002_egypt3 {
+            get {
+                object obj = ResourceManager.GetObject("002-egypt3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _002_egypt4 {
+            get {
+                object obj = ResourceManager.GetObject("002-egypt4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _002_egypt5 {
+            get {
+                object obj = ResourceManager.GetObject("002-egypt5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _002_group {
             get {
                 object obj = ResourceManager.GetObject("002-group", resourceCulture);
@@ -136,6 +206,26 @@ namespace Sistema_Hotel.Properties {
         internal static System.Drawing.Bitmap _002_hotel_1 {
             get {
                 object obj = ResourceManager.GetObject("002-hotel-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _002egypt {
+            get {
+                object obj = ResourceManager.GetObject("002egypt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _002egypt1 {
+            get {
+                object obj = ResourceManager.GetObject("002egypt1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,9 +603,39 @@ namespace Sistema_Hotel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Close_Window__2_48px3 {
+            get {
+                object obj = ResourceManager.GetObject("Close Window_ 2 48px3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap customer_person_people_man_user_client_1629 {
             get {
                 object obj = ResourceManager.GetObject("customer_person_people_man_user_client_1629", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eye_of_ra {
+            get {
+                object obj = ResourceManager.GetObject("eye-of-ra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hieroglyph {
+            get {
+                object obj = ResourceManager.GetObject("hieroglyph", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -593,6 +713,36 @@ namespace Sistema_Hotel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap isis {
+            get {
+                object obj = ResourceManager.GetObject("isis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap isis1 {
+            get {
+                object obj = ResourceManager.GetObject("isis1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap isis2 {
+            get {
+                object obj = ResourceManager.GetObject("isis2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lujoso_hotel_cinco_estrellas_recibe_huespedes_fin_semana_110955_459 {
             get {
                 object obj = ResourceManager.GetObject("lujoso-hotel-cinco-estrellas-recibe-huespedes-fin-semana_110955-459", resourceCulture);
@@ -643,6 +793,16 @@ namespace Sistema_Hotel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Maximize_Window_2_48px3 {
+            get {
+                object obj = ResourceManager.GetObject("Maximize Window_2 48px3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Menu_48px {
             get {
                 object obj = ResourceManager.GetObject("Menu_48px", resourceCulture);
@@ -676,6 +836,26 @@ namespace Sistema_Hotel.Properties {
         internal static System.Drawing.Bitmap Minimize_Window_2_48px1 {
             get {
                 object obj = ResourceManager.GetObject("Minimize Window_2 48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minimize_Window_2_48px2 {
+            get {
+                object obj = ResourceManager.GetObject("Minimize Window_2 48px2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minimize_Window_2_48px3 {
+            get {
+                object obj = ResourceManager.GetObject("Minimize Window_2 48px3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -816,6 +996,16 @@ namespace Sistema_Hotel.Properties {
         internal static System.Drawing.Bitmap Restore_Window_2_48px1 {
             get {
                 object obj = ResourceManager.GetObject("Restore Window 2_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Restore_Window_2_48px2 {
+            get {
+                object obj = ResourceManager.GetObject("Restore Window 2_48px2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

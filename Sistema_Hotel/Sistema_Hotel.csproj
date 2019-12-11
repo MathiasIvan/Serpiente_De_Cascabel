@@ -461,6 +461,21 @@
   <ItemGroup>
     <None Include="bin\Debug\Imagen\71Tvs3XyjAL._SL1500_.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\001-god.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\002-egypt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\002egypt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\isis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\eye-of-ra.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
