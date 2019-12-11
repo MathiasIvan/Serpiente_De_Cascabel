@@ -234,5 +234,11 @@ namespace Sistema_Hotel
             w = this.Width;
             h = this.Height;
         }
+
+        private void btnGenerarListado_Click(object sender, EventArgs e)
+        {
+            frmListado_Registradores frmlistadoregistradores = new frmListado_Registradores();
+            frmlistadoregistradores.Show();
+        }
     }
 }

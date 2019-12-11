@@ -53,6 +53,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.lstRegistrador = new System.Windows.Forms.ListBox();
             this.mnsMoverFormulario = new System.Windows.Forms.MenuStrip();
+            this.btnGenerarListado = new System.Windows.Forms.Button();
             this.gbxRegistradores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -292,10 +293,10 @@
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Location = new System.Drawing.Point(744, 446);
+            this.btnEliminar.Location = new System.Drawing.Point(728, 442);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(88, 30);
+            this.btnEliminar.Size = new System.Drawing.Size(104, 30);
             this.btnEliminar.TabIndex = 40;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -311,10 +312,10 @@
             this.btnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar.Location = new System.Drawing.Point(744, 406);
+            this.btnActualizar.Location = new System.Drawing.Point(728, 405);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(88, 30);
+            this.btnActualizar.Size = new System.Drawing.Size(104, 30);
             this.btnActualizar.TabIndex = 39;
             this.btnActualizar.Text = "&Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
@@ -330,10 +331,10 @@
             this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Location = new System.Drawing.Point(744, 367);
+            this.btnAgregar.Location = new System.Drawing.Point(728, 367);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(88, 30);
+            this.btnAgregar.Size = new System.Drawing.Size(104, 30);
             this.btnAgregar.TabIndex = 38;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -348,10 +349,10 @@
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Location = new System.Drawing.Point(744, 485);
+            this.btnSalir.Location = new System.Drawing.Point(728, 517);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(88, 30);
+            this.btnSalir.Size = new System.Drawing.Size(104, 30);
             this.btnSalir.TabIndex = 41;
             this.btnSalir.Text = "&Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -366,7 +367,7 @@
             this.lstRegistrador.Location = new System.Drawing.Point(12, 367);
             this.lstRegistrador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lstRegistrador.Name = "lstRegistrador";
-            this.lstRegistrador.Size = new System.Drawing.Size(716, 148);
+            this.lstRegistrador.Size = new System.Drawing.Size(704, 180);
             this.lstRegistrador.TabIndex = 34;
             this.lstRegistrador.TabStop = false;
             this.lstRegistrador.Click += new System.EventHandler(this.lstRegistrador_Click);
@@ -374,13 +375,31 @@
             // mnsMoverFormulario
             // 
             this.mnsMoverFormulario.BackColor = System.Drawing.Color.Transparent;
-            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Left;
             this.mnsMoverFormulario.Location = new System.Drawing.Point(0, 0);
             this.mnsMoverFormulario.Name = "mnsMoverFormulario";
-            this.mnsMoverFormulario.Size = new System.Drawing.Size(845, 533);
+            this.mnsMoverFormulario.Size = new System.Drawing.Size(30, 563);
             this.mnsMoverFormulario.TabIndex = 42;
             this.mnsMoverFormulario.Text = "menuStrip1";
             this.mnsMoverFormulario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mnsMoverFormulario_MouseDown);
+            // 
+            // btnGenerarListado
+            // 
+            this.btnGenerarListado.BackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerarListado.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnGenerarListado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarListado.ForeColor = System.Drawing.Color.Black;
+            this.btnGenerarListado.Location = new System.Drawing.Point(728, 480);
+            this.btnGenerarListado.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenerarListado.Name = "btnGenerarListado";
+            this.btnGenerarListado.Size = new System.Drawing.Size(104, 30);
+            this.btnGenerarListado.TabIndex = 43;
+            this.btnGenerarListado.Text = "Generar Listado";
+            this.btnGenerarListado.UseVisualStyleBackColor = false;
+            this.btnGenerarListado.Click += new System.EventHandler(this.btnGenerarListado_Click);
             // 
             // frmRegistrador
             // 
@@ -388,7 +407,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(845, 533);
+            this.ClientSize = new System.Drawing.Size(845, 563);
+            this.Controls.Add(this.btnGenerarListado);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAgregar);
@@ -442,5 +462,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ListBox lstRegistrador;
         private System.Windows.Forms.MenuStrip mnsMoverFormulario;
+        private System.Windows.Forms.Button btnGenerarListado;
     }
 }

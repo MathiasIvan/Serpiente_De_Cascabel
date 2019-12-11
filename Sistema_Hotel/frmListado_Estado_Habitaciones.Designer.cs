@@ -41,17 +41,17 @@
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ReportSource = this.Listado_Estado_Habitaciones1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(471, 415);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(503, 415);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // frmEstado_Habitaciones
+            // frmListado_Estado_Habitaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 415);
+            this.ClientSize = new System.Drawing.Size(503, 415);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "frmEstado_Habitaciones";
-            this.Text = "frmEstado_Habitaciones";
+            this.Name = "frmListado_Estado_Habitaciones";
+            this.Text = "Reporte de Estado Habitaciones";
             this.ResumeLayout(false);
 
         }
