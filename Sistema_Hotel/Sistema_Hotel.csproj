@@ -113,6 +113,12 @@
     <Compile Include="frmListado_Clientes.Designer.cs">
       <DependentUpon>frmListado_Clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListado_Gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListado_Gastos.Designer.cs">
+      <DependentUpon>frmListado_Gastos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListado_Habitaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,12 @@
     </Compile>
     <Compile Include="frmListado_Registradores.Designer.cs">
       <DependentUpon>frmListado_Registradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListado_Reservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListado_Reservas.Designer.cs">
+      <DependentUpon>frmListado_Reservas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListado_Tipo_Habitaciones.cs">
       <SubType>Form</SubType>
@@ -167,6 +179,12 @@
       <DependentUpon>Listado_Estado_Habitaciones.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Listado_Gastos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Listado_Gastos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Listado_Habitaciones.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -177,6 +195,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Listado_Registradores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Listado_Reservas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Listado_Reservas.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Listado_Tipo_Habitaciones.cs">
@@ -214,11 +238,17 @@
     <EmbeddedResource Include="frmListado_Clientes.resx">
       <DependentUpon>frmListado_Clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListado_Gastos.resx">
+      <DependentUpon>frmListado_Gastos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListado_Habitaciones.resx">
       <DependentUpon>frmListado_Habitaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListado_Registradores.resx">
       <DependentUpon>frmListado_Registradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListado_Reservas.resx">
+      <DependentUpon>frmListado_Reservas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListado_Tipo_Habitaciones.resx">
       <DependentUpon>frmListado_Tipo_Habitaciones.cs</DependentUpon>
@@ -243,6 +273,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Listado_Estado_Habitaciones.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Gastos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_Gastos.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Listado_Habitaciones.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Listado_Habitaciones.cs</LastGenOutput>
@@ -250,6 +284,10 @@
     <EmbeddedResource Include="Listado_Registradores.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Listado_Registradores.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Reservas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_Reservas.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Listado_Tipo_Habitaciones.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
