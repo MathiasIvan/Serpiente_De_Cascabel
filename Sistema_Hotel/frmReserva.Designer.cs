@@ -235,7 +235,7 @@
             this.dtpFechaHoraSalidaReserva.Name = "dtpFechaHoraSalidaReserva";
             this.dtpFechaHoraSalidaReserva.Size = new System.Drawing.Size(146, 21);
             this.dtpFechaHoraSalidaReserva.TabIndex = 23;
-            this.dtpFechaHoraSalidaReserva.ValueChanged += new System.EventHandler(this.dtpFechaHoraSalidaReserva_ValueChanged);
+            //this.dtpFechaHoraSalidaReserva.ValueChanged += new System.EventHandler(this.dtpFechaHoraSalidaReserva_ValueChanged);
             // 
             // cboHabitacionReserva
             // 
