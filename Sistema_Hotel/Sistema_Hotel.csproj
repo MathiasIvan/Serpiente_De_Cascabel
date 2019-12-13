@@ -556,6 +556,15 @@
   <ItemGroup>
     <None Include="bin\Debug\Imagen\1 %281%29.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\bed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Imagen\bed %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Iconos\001-cama.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

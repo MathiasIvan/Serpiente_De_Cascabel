@@ -190,7 +190,7 @@
             // 
             // pictHabitacion
             // 
-            this.pictHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.cama;
+            this.pictHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources._001_cama;
             this.pictHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictHabitacion.Location = new System.Drawing.Point(8, 253);
@@ -214,7 +214,7 @@
             // 
             // pictTipoHabitacion
             // 
-            this.pictTipoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.person_user_customer_man_male_man_boy_people_1687;
+            this.pictTipoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.bed__1_;
             this.pictTipoHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictTipoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictTipoHabitacion.Location = new System.Drawing.Point(8, 314);
