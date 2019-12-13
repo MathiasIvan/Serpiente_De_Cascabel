@@ -63,7 +63,10 @@ namespace Sistema_Hotel
 
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
-            var c = ObtenerDatosFormulario();
+            if (ValidarCampos())
+            {
+
+                var c = ObtenerDatosFormulario();
 
             if (alternativa == "Agregar")
             {
@@ -89,6 +92,8 @@ namespace Sistema_Hotel
             LimpiarFormulario();
             ActualizarListaClientes();
             BloquearFormulario();
+           }
+
         }
 
       
@@ -237,10 +242,112 @@ namespace Sistema_Hotel
             h = this.Height;
         }
 
+
         private void btnGenerarListado_Click(object sender, EventArgs e)
         {
             frmListado_Clientes frmlistadoclientes = new frmListado_Clientes();
             frmlistadoclientes.Show();
         }
+
+
+        private bool ValidarCampos()
+        {
+            if (String.IsNullOrWhiteSpace(txtNombreCliente.Text))
+            {
+                MessageBox.Show("Ingrese el Nombre.", "Mantenimiento de Clientes.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombreCliente.Focus();
+                return false;
+            }
+
+            if (txtNombreCliente.Text.Length < 3 || txtNombreCliente.Text.Length > 30)
+            {
+                MessageBox.Show("La longitud de caracteres es incorrecta", "Mantenimiento de Clientes.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombreCliente.Focus();
+                return false;
+            }
+
+            if (String.IsNullOrWhiteSpace(txtDireccionCliente.Text))
+            {
+                MessageBox.Show("Ingrese la Dirección.", "Mantenimiento de Clientes.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDireccionCliente.Focus();
+                return false;
+            }
+
+
+            if (String.IsNullOrWhiteSpace(txtTelefonoCliente.Text))
+            {
+                MessageBox.Show("Ingrese el Número de Teléfono.", "Mantenimiento de Clientes.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTelefonoCliente.Focus();
+                return false;
+            }
+
+
+            if (String.IsNullOrWhiteSpace(txtNroDocumentoCliente.Text))
+            {
+                MessageBox.Show("Ingrese el Número de Documento.", "Mantenimiento de Clientes.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNroDocumentoCliente.Focus();
+                return false;
+            }
+
+
+            if (cboNacionalidadCliente.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione una Nacionalidad", "Mantenimiento de Clientes.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboNacionalidadCliente.Focus();
+                return false;
+            }
+
+            return true;
+        }
+    
+
+        private void txtTelefonoCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void txtNroDocumentoCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        
     }
 }

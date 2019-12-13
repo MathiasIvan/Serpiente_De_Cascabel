@@ -146,7 +146,7 @@ namespace Clases_Hotel
 
         private SqlCommand ObtenerParametros(SqlCommand cmd, Boolean id = false)
 
-        {//
+        {
             SqlParameter p1 = new SqlParameter("@FechaHoraEntrada", this.FechaHoraEntrada);
             SqlParameter p2 = new SqlParameter("@FechaHoraSalida", this.FechaHoraSalida);
             SqlParameter p3 = new SqlParameter("@Id_Habitacion", this._Habitacion.ID_Habitacion.ToString());
@@ -176,9 +176,17 @@ namespace Clases_Hotel
                 cmd = ObtenerParametrosId(cmd);
             }
             return cmd;
-
         }
 
     }
+
 }
+
+
+        
+
+
+
+
+
 

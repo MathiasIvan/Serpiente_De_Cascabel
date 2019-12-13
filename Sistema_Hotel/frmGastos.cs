@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Clases_Hotel;
 using System.Runtime.InteropServices;
 
+
 namespace Sistema_Hotel
 {
     public partial class frmGastos : Form
@@ -37,7 +38,10 @@ namespace Sistema_Hotel
 
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
-            var g = ObtenerDatosFormulario();
+            if (ValidarCampos())
+            {
+
+                var g = ObtenerDatosFormulario();
 
 
             if (alternativa == "Agregar")
@@ -64,6 +68,7 @@ namespace Sistema_Hotel
             LimpiarFormulario();
             ActualizarListaGastos();
             BloquearFormulario();
+            }
         }
 
        
@@ -241,8 +246,104 @@ namespace Sistema_Hotel
             frmListado_Gastos frmlistadogastos = new frmListado_Gastos();
             frmlistadogastos.Show();
         }
-    }
 
-}
+
+        private bool ValidarCampos()
+        {
+                   
+            if (cboReservaGasto.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione una Reserva.", "Nómina de Gastos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboReservaGasto.Focus();
+                return false;
+            }
+
+            if (cboServicioGasto.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione un Servicio.", "Nómina de Gastos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboServicioGasto.Focus();
+                return false;
+            }
+
+
+
+            if (dtpFechaGasto.Value < DateTime.Now.Date)
+            {
+                MessageBox.Show("Ingrese una Fecha correcta.", "Nómina de Gastos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dtpFechaGasto.Focus();
+                return false;
+            }
+
+            if (String.IsNullOrWhiteSpace(txtCantidadGasto.Text))
+            {
+                MessageBox.Show("Ingrese la Cantidad.", "Nómina de Gastos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCantidadGasto.Focus();
+                return false;
+            }
+
+            if (String.IsNullOrWhiteSpace(txtCostoTotalGasto.Text))
+            {
+                MessageBox.Show("Ingrese el Costo Total.", "Nómina de Gastos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCostoTotalGasto.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
+        private void txtCantidadGasto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCostoTotalGasto_KeyPress(object sender, KeyPressEventArgs e)
+
+        {
+
+            System.Globalization.CultureInfo cc = System.Threading.Thread.CurrentThread.CurrentCulture;
+
+            if (Char.IsNumber(e.KeyChar) || e.KeyChar.ToString() == cc.NumberFormat.NumberDecimalSeparator)
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
+            }
+
+        }
+    }
+ }
+
+
 
 

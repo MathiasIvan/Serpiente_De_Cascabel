@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Detalle_Reserva.cs" />
     <Compile Include="Estado_Habitacion.cs" />
     <Compile Include="Gastos.cs" />
     <Compile Include="Habitacion.cs" />

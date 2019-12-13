@@ -56,7 +56,10 @@ namespace Sistema_Hotel
 
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
-            var th = ObtenerDatosFormulario();
+            if (ValidarCampos())
+            {
+
+                var th = ObtenerDatosFormulario();
 
             if (alternativa == "Agregar")
             {
@@ -82,6 +85,7 @@ namespace Sistema_Hotel
             LimpiarFormulario();
             ActualizarListaTipoHabitaciones();
             BloquearFormulario();
+            }
         }
 
 
@@ -214,5 +218,18 @@ namespace Sistema_Hotel
             frmListado_Tipo_Habitaciones frmlistadotipohabitaciones = new frmListado_Tipo_Habitaciones();
             frmlistadotipohabitaciones.Show();
         }
-    }
+
+        private bool ValidarCampos()
+        {
+            if (String.IsNullOrWhiteSpace(txtDescripcionTipoHabitacion.Text))
+            {
+                MessageBox.Show("Ingrese una breve Descripción.", "Mantenimiento Tipo Habitaciones.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDescripcionTipoHabitacion.Focus();
+                return false;
+            }
+
+            return true;
+        }
+}
+
 }

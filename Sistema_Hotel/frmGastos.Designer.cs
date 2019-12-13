@@ -74,22 +74,24 @@
             // txtCostoTotalGasto
             // 
             this.txtCostoTotalGasto.BackColor = System.Drawing.Color.White;
-            this.txtCostoTotalGasto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtCostoTotalGasto.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCostoTotalGasto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCostoTotalGasto.Location = new System.Drawing.Point(83, 224);
             this.txtCostoTotalGasto.Name = "txtCostoTotalGasto";
             this.txtCostoTotalGasto.Size = new System.Drawing.Size(202, 21);
             this.txtCostoTotalGasto.TabIndex = 24;
+            this.txtCostoTotalGasto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCostoTotalGasto_KeyPress);
             // 
             // txtCantidadGasto
             // 
             this.txtCantidadGasto.BackColor = System.Drawing.Color.White;
-            this.txtCantidadGasto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtCantidadGasto.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCantidadGasto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidadGasto.Location = new System.Drawing.Point(77, 186);
             this.txtCantidadGasto.Name = "txtCantidadGasto";
             this.txtCantidadGasto.Size = new System.Drawing.Size(208, 21);
             this.txtCantidadGasto.TabIndex = 22;
+            this.txtCantidadGasto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadGasto_KeyPress);
             // 
             // dtpFechaGasto
             // 
@@ -216,7 +218,7 @@
             this.gbxGastos.Size = new System.Drawing.Size(820, 321);
             this.gbxGastos.TabIndex = 33;
             this.gbxGastos.TabStop = false;
-            this.gbxGastos.Text = "Nomina de Gastos";
+            this.gbxGastos.Text = "Nómina de Gastos";
             // 
             // pictGatos
             // 
@@ -374,10 +376,10 @@
             // mnsMoverFormulario
             // 
             this.mnsMoverFormulario.BackColor = System.Drawing.Color.Transparent;
-            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Left;
+            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mnsMoverFormulario.Location = new System.Drawing.Point(0, 0);
             this.mnsMoverFormulario.Name = "mnsMoverFormulario";
-            this.mnsMoverFormulario.Size = new System.Drawing.Size(30, 563);
+            this.mnsMoverFormulario.Size = new System.Drawing.Size(845, 563);
             this.mnsMoverFormulario.TabIndex = 46;
             this.mnsMoverFormulario.Text = "menuStrip1";
             this.mnsMoverFormulario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mnsMoverFormulario_MouseDown);
@@ -420,7 +422,7 @@
             this.MainMenuStrip = this.mnsMoverFormulario;
             this.Name = "frmGastos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nonima de Gastos";
+            this.Text = "Nómina de Gastos";
             this.Load += new System.EventHandler(this.frmGastos_Load);
             this.gbxGastos.ResumeLayout(false);
             this.gbxGastos.PerformLayout();

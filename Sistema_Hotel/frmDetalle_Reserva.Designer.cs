@@ -32,21 +32,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dtpFechaDetalleReservacion = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lblClienteReservacion = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lblTipoHabitacionDetalleReserva = new System.Windows.Forms.Label();
+            this.cboTipoHabitacionDetalleReserva = new System.Windows.Forms.ComboBox();
+            this.dgvDetalleReserva = new System.Windows.Forms.DataGridView();
+            this.lblFechaDetalleReserva = new System.Windows.Forms.Label();
+            this.dtpFechaDetalleReserva = new System.Windows.Forms.DateTimePicker();
+            this.lblClienteDetalleReserva = new System.Windows.Forms.Label();
+            this.cboClienteDetalleReserva = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleReserva)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(414, 364);
+            this.btnGuardar.Location = new System.Drawing.Point(417, 412);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(66, 27);
@@ -57,7 +55,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 145);
+            this.label5.Location = new System.Drawing.Point(29, 193);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 38;
@@ -65,7 +63,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(251, 115);
+            this.btnEliminar.Location = new System.Drawing.Point(254, 163);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 37;
@@ -74,113 +72,96 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(144, 115);
+            this.btnAgregar.Location = new System.Drawing.Point(147, 163);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 36;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // lblTipoHabitacionDetalleReserva
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(141, 91);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 13);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Reservas: ";
+            this.lblTipoHabitacionDetalleReserva.AutoSize = true;
+            this.lblTipoHabitacionDetalleReserva.Location = new System.Drawing.Point(27, 88);
+            this.lblTipoHabitacionDetalleReserva.Name = "lblTipoHabitacionDetalleReserva";
+            this.lblTipoHabitacionDetalleReserva.Size = new System.Drawing.Size(88, 13);
+            this.lblTipoHabitacionDetalleReserva.TabIndex = 35;
+            this.lblTipoHabitacionDetalleReserva.Text = "Tipo Habitación: ";
             // 
-            // comboBox1
+            // cboTipoHabitacionDetalleReserva
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboTipoHabitacionDetalleReserva.FormattingEnabled = true;
+            this.cboTipoHabitacionDetalleReserva.Items.AddRange(new object[] {
             "Vacuna",
             "Porcina"});
-            this.comboBox1.Location = new System.Drawing.Point(205, 88);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 30;
+            this.cboTipoHabitacionDetalleReserva.Location = new System.Drawing.Point(121, 84);
+            this.cboTipoHabitacionDetalleReserva.Name = "cboTipoHabitacionDetalleReserva";
+            this.cboTipoHabitacionDetalleReserva.Size = new System.Drawing.Size(121, 21);
+            this.cboTipoHabitacionDetalleReserva.TabIndex = 30;
             // 
-            // label7
+            // dgvDetalleReserva
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(27, 91);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 13);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Cantidad";
+            this.dgvDetalleReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalleReserva.Location = new System.Drawing.Point(32, 209);
+            this.dgvDetalleReserva.Name = "dgvDetalleReserva";
+            this.dgvDetalleReserva.Size = new System.Drawing.Size(451, 198);
+            this.dgvDetalleReserva.TabIndex = 33;
             // 
-            // textBox1
+            // lblFechaDetalleReserva
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(24, 20);
-            this.textBox1.TabIndex = 31;
+            this.lblFechaDetalleReserva.AutoSize = true;
+            this.lblFechaDetalleReserva.Location = new System.Drawing.Point(27, 15);
+            this.lblFechaDetalleReserva.Name = "lblFechaDetalleReserva";
+            this.lblFechaDetalleReserva.Size = new System.Drawing.Size(40, 13);
+            this.lblFechaDetalleReserva.TabIndex = 32;
+            this.lblFechaDetalleReserva.Text = "Fecha:";
             // 
-            // dataGridView1
+            // dtpFechaDetalleReserva
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 161);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(451, 198);
-            this.dataGridView1.TabIndex = 33;
+            this.dtpFechaDetalleReserva.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaDetalleReserva.Location = new System.Drawing.Point(74, 12);
+            this.dtpFechaDetalleReserva.Name = "dtpFechaDetalleReserva";
+            this.dtpFechaDetalleReserva.Size = new System.Drawing.Size(282, 20);
+            this.dtpFechaDetalleReserva.TabIndex = 27;
             // 
-            // dtpFechaDetalleReservacion
+            // lblClienteDetalleReserva
             // 
-            this.dtpFechaDetalleReservacion.AutoSize = true;
-            this.dtpFechaDetalleReservacion.Location = new System.Drawing.Point(27, 15);
-            this.dtpFechaDetalleReservacion.Name = "dtpFechaDetalleReservacion";
-            this.dtpFechaDetalleReservacion.Size = new System.Drawing.Size(40, 13);
-            this.dtpFechaDetalleReservacion.TabIndex = 32;
-            this.dtpFechaDetalleReservacion.Text = "Fecha:";
+            this.lblClienteDetalleReserva.AutoSize = true;
+            this.lblClienteDetalleReserva.Location = new System.Drawing.Point(27, 53);
+            this.lblClienteDetalleReserva.Name = "lblClienteDetalleReserva";
+            this.lblClienteDetalleReserva.Size = new System.Drawing.Size(39, 13);
+            this.lblClienteDetalleReserva.TabIndex = 28;
+            this.lblClienteDetalleReserva.Text = "Cliente";
             // 
-            // dateTimePicker1
+            // cboClienteDetalleReserva
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(74, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(252, 20);
-            this.dateTimePicker1.TabIndex = 27;
-            // 
-            // lblClienteReservacion
-            // 
-            this.lblClienteReservacion.AutoSize = true;
-            this.lblClienteReservacion.Location = new System.Drawing.Point(27, 53);
-            this.lblClienteReservacion.Name = "lblClienteReservacion";
-            this.lblClienteReservacion.Size = new System.Drawing.Size(39, 13);
-            this.lblClienteReservacion.TabIndex = 28;
-            this.lblClienteReservacion.Text = "Cliente";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(72, 50);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(254, 21);
-            this.comboBox2.TabIndex = 29;
+            this.cboClienteDetalleReserva.FormattingEnabled = true;
+            this.cboClienteDetalleReserva.Location = new System.Drawing.Point(72, 50);
+            this.cboClienteDetalleReserva.Name = "cboClienteDetalleReserva";
+            this.cboClienteDetalleReserva.Size = new System.Drawing.Size(284, 21);
+            this.cboClienteDetalleReserva.TabIndex = 29;
             // 
             // frmDetalle_Reserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(597, 430);
+            this.ClientSize = new System.Drawing.Size(597, 506);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dtpFechaDetalleReservacion);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.lblClienteReservacion);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.lblTipoHabitacionDetalleReserva);
+            this.Controls.Add(this.cboTipoHabitacionDetalleReserva);
+            this.Controls.Add(this.dgvDetalleReserva);
+            this.Controls.Add(this.lblFechaDetalleReserva);
+            this.Controls.Add(this.dtpFechaDetalleReserva);
+            this.Controls.Add(this.lblClienteDetalleReserva);
+            this.Controls.Add(this.cboClienteDetalleReserva);
             this.Name = "frmDetalle_Reserva";
             this.Text = "Detalle / Reserva";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            //this.Load += new System.EventHandler(this.frmDetalle_Reserva_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleReserva)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,14 +173,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label dtpFechaDetalleReservacion;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label lblClienteReservacion;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label lblTipoHabitacionDetalleReserva;
+        private System.Windows.Forms.ComboBox cboTipoHabitacionDetalleReserva;
+        private System.Windows.Forms.DataGridView dgvDetalleReserva;
+        private System.Windows.Forms.Label lblFechaDetalleReserva;
+        private System.Windows.Forms.DateTimePicker dtpFechaDetalleReserva;
+        private System.Windows.Forms.Label lblClienteDetalleReserva;
+        private System.Windows.Forms.ComboBox cboClienteDetalleReserva;
     }
 }

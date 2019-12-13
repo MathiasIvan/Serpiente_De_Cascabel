@@ -130,6 +130,7 @@
             this.txtNroDocumentoRegistrador.Name = "txtNroDocumentoRegistrador";
             this.txtNroDocumentoRegistrador.Size = new System.Drawing.Size(174, 22);
             this.txtNroDocumentoRegistrador.TabIndex = 24;
+            this.txtNroDocumentoRegistrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNroDocumentoRegistrador_KeyPress);
             // 
             // txtTelefonoRegistrador
             // 
@@ -140,6 +141,7 @@
             this.txtTelefonoRegistrador.Name = "txtTelefonoRegistrador";
             this.txtTelefonoRegistrador.Size = new System.Drawing.Size(217, 22);
             this.txtTelefonoRegistrador.TabIndex = 22;
+            this.txtTelefonoRegistrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefonoRegistrador_KeyPress);
             // 
             // txtNombreRegistrador
             // 

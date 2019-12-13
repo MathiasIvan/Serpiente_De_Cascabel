@@ -61,7 +61,10 @@ namespace Sistema_Hotel
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            var r = ObtenerDatosFormulario();
+            if (ValidarCampos())
+            {
+
+                var r = ObtenerDatosFormulario();
 
             if (alternativa == "Agregar")
             {
@@ -88,6 +91,7 @@ namespace Sistema_Hotel
             LimpiarFormulario();
             ActualizarListaRegistradores();
             BloquearFormulario();
+           }
         }
 
 
@@ -196,7 +200,7 @@ namespace Sistema_Hotel
             txtTelefonoRegistrador.Enabled = false;
             txtNroDocumentoRegistrador.Enabled = false;
             txtObservacionRegistrador.Enabled = false;
-
+           
             btnAceptar.Enabled = false;
             btnCancelar.Enabled = false;
             btnLimpiar.Enabled = false;
@@ -239,6 +243,95 @@ namespace Sistema_Hotel
         {
             frmListado_Registradores frmlistadoregistradores = new frmListado_Registradores();
             frmlistadoregistradores.Show();
+        }
+
+
+        private bool ValidarCampos()
+        {
+            if (String.IsNullOrWhiteSpace(txtNombreRegistrador.Text))
+            {
+                MessageBox.Show("Ingrese el Nombre.", "Mantenimiento de Registradores.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombreRegistrador.Focus();
+                return false;
+            }
+
+            if (txtNombreRegistrador.Text.Length < 3 || txtNombreRegistrador.Text.Length > 30)
+            {
+                MessageBox.Show("La longitud de caracteres es incorrecta", "Mantenimiento de Registradores.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombreRegistrador.Focus();
+                return false;
+            }
+
+            if (String.IsNullOrWhiteSpace(txtDireccionRegistrador.Text))
+            {
+                MessageBox.Show("Ingrese la Dirección.", "Mantenimiento de Registradores.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDireccionRegistrador.Focus();
+                return false;
+            }
+
+
+            if (String.IsNullOrWhiteSpace(txtTelefonoRegistrador.Text))
+            {
+                MessageBox.Show("Ingrese el Número de Teléfono.", "Mantenimiento de Registradores.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTelefonoRegistrador.Focus();
+                return false;
+            }
+
+
+            if (String.IsNullOrWhiteSpace(txtNroDocumentoRegistrador.Text))
+            {
+                MessageBox.Show("Ingrese el Número de Documento.", "Mantenimiento de Registradores.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNroDocumentoRegistrador.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
+        private void txtTelefonoRegistrador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNroDocumentoRegistrador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -257,6 +257,7 @@
             this.txtTelefonoCliente.Name = "txtTelefonoCliente";
             this.txtTelefonoCliente.Size = new System.Drawing.Size(210, 22);
             this.txtTelefonoCliente.TabIndex = 38;
+            this.txtTelefonoCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefonoCliente_KeyPress);
             // 
             // txtNroDocumentoCliente
             // 
@@ -266,6 +267,7 @@
             this.txtNroDocumentoCliente.Name = "txtNroDocumentoCliente";
             this.txtNroDocumentoCliente.Size = new System.Drawing.Size(177, 22);
             this.txtNroDocumentoCliente.TabIndex = 39;
+            this.txtNroDocumentoCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNroDocumentoCliente_KeyPress);
             // 
             // txtNombreCliente
             // 
@@ -390,6 +392,7 @@
             this.mnsMoverFormulario.Size = new System.Drawing.Size(845, 563);
             this.mnsMoverFormulario.TabIndex = 36;
             this.mnsMoverFormulario.Text = "menuStrip1";
+            //this.mnsMoverFormulario.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnsMoverFormulario_ItemClicked);
             this.mnsMoverFormulario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mnsMoverFormulario_MouseDown);
             // 
             // btnGenerarListado

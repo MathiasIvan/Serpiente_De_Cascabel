@@ -189,7 +189,7 @@
             // 
             // txtObservacionReserva
             // 
-            this.txtObservacionReserva.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtObservacionReserva.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtObservacionReserva.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservacionReserva.Location = new System.Drawing.Point(94, 305);
             this.txtObservacionReserva.Name = "txtObservacionReserva";
@@ -261,12 +261,13 @@
             // 
             // txtCostoTotalReserva
             // 
-            this.txtCostoTotalReserva.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtCostoTotalReserva.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCostoTotalReserva.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCostoTotalReserva.Location = new System.Drawing.Point(83, 269);
             this.txtCostoTotalReserva.Name = "txtCostoTotalReserva";
             this.txtCostoTotalReserva.Size = new System.Drawing.Size(202, 21);
             this.txtCostoTotalReserva.TabIndex = 30;
+            this.txtCostoTotalReserva.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCostoTotalReserva_KeyPress);
             // 
             // lblObservacionReserva
             // 
@@ -376,7 +377,7 @@
             this.gbxReserva.Size = new System.Drawing.Size(820, 389);
             this.gbxReserva.TabIndex = 42;
             this.gbxReserva.TabStop = false;
-            this.gbxReserva.Text = "Nomina de Reservas";
+            this.gbxReserva.Text = "Nómina de Reservas";
             // 
             // pictReserva
             // 

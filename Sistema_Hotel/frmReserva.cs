@@ -21,7 +21,10 @@ namespace Sistema_Hotel
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            var rs = ObtenerDatosFormulario();
+            if (ValidarCampos())
+            {
+
+                var rs = ObtenerDatosFormulario();
 
 
             if (alternativa == "Agregar")
@@ -47,6 +50,7 @@ namespace Sistema_Hotel
             LimpiarFormulario();
             ActualizarListaReservas();
             BloquearFormulario();
+            }
         }
 
         private Reserva ObtenerDatosFormulario()
@@ -210,11 +214,11 @@ namespace Sistema_Hotel
 
         private void dtpFechaHoraSalidaReserva_ValueChanged(object sender, EventArgs e)
         {
-            if (dtpFechaHoraSalidaReserva.Value.Date < dtpFechaHoraEntradaReserva.Value.Date)
+            /*if (dtpFechaHoraSalidaReserva.Value.Date < dtpFechaHoraEntradaReserva.Value.Date)
             {
                 MessageBox.Show("La Fecha de Salida no puede ser menor a la Fecha de Entrada.");
                 dtpFechaHoraSalidaReserva.Focus();
-            }
+            }*/
         }
 
         private void btnGenerarListado_Click(object sender, EventArgs e)
@@ -237,6 +241,85 @@ namespace Sistema_Hotel
                 cboRegistradorReserva.SelectedItem = (Registrador)Registrador.ObtenerRegistrador(rs._Registrador.ID_Registrador);
                 txtCostoTotalReserva.Text = rs.CostoTotal.ToString();
                 txtObservacionReserva.Text = rs.Observacion;
+            }
+        }
+
+        private bool ValidarCampos()
+        {
+
+            if (dtpFechaHoraEntradaReserva.Value < DateTime.Now.Date)
+            {
+                MessageBox.Show("Ingrese una Fecha correcta.", "Nómina de Reservas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dtpFechaHoraEntradaReserva.Focus();
+                return false;
+            }
+
+            if (dtpFechaHoraSalidaReserva.Value < dtpFechaHoraEntradaReserva.Value.Date)
+            {
+                MessageBox.Show("La Fecha de Salida no puede ser Menor a la Fecha de Entrada.", "Nómina de Reservas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dtpFechaHoraSalidaReserva.Focus();
+                return false;
+            }
+
+
+            var hab = (Habitacion)cboHabitacionReserva.SelectedItem;
+            if (hab == null)
+            {
+                MessageBox.Show("Seleccione la Habitación.", "Nómina de Reservas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboHabitacionReserva.Focus();
+                return false;
+            }
+
+
+            var cli = (Cliente)cboClienteReserva.SelectedItem;
+            if (cli == null)
+            {
+                MessageBox.Show("Seleccione el Cliente.", "Nómina de Reservas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboClienteReserva.Focus();
+                return false;
+            }
+
+            var re = (Registrador)cboRegistradorReserva.SelectedItem;
+            if (re == null)
+            {
+                MessageBox.Show("Seleccione el Registador.", "Nómina de Reservas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboRegistradorReserva.Focus();
+                return false;
+            }
+
+            if (String.IsNullOrWhiteSpace(txtCostoTotalReserva.Text))
+            {
+                MessageBox.Show("Ingrese el Costo.", "Nómina de Reservas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCostoTotalReserva.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
+
+        private void txtCostoTotalReserva_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            System.Globalization.CultureInfo cc = System.Threading.Thread.CurrentThread.CurrentCulture;
+
+            if (Char.IsNumber(e.KeyChar) || e.KeyChar.ToString() == cc.NumberFormat.NumberDecimalSeparator)
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
             }
         }
     }

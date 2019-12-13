@@ -13,8 +13,8 @@ namespace Clases_Hotel
     {
         public int ID_Habitacion { get; set; }
         public int Numero { get; set; }
-        public Estado_Habitacion Id_EstadoHabitacion { get; set; }
-        public Tipo_Habitacion Id_TipoHabitacion { get; set; }
+        public Estado_Habitacion _Estado_Habitacion { get; set; }
+        public Tipo_Habitacion _TipoHabitacion { get; set; }
         public double Costo { get; set; }
         public string Descripcion { get; set; }
 
@@ -46,8 +46,8 @@ namespace Clases_Hotel
                     habitacion = new Habitacion();
                     habitacion.ID_Habitacion = elLectorDeDatos.GetInt32(0);
                     habitacion.Numero = elLectorDeDatos.GetInt32(1);
-                    habitacion.Id_EstadoHabitacion = Estado_Habitacion.ObtenerEsHabitacion(elLectorDeDatos.GetInt32(2));
-                    habitacion.Id_TipoHabitacion = Tipo_Habitacion.ObtenerThabitacion(elLectorDeDatos.GetInt32(3));
+                    habitacion._Estado_Habitacion = Estado_Habitacion.ObtenerEsHabitacion(elLectorDeDatos.GetInt32(2));
+                    habitacion._TipoHabitacion = Tipo_Habitacion.ObtenerThabitacion(elLectorDeDatos.GetInt32(3));
                     habitacion.Costo = Convert.ToDouble(elLectorDeDatos.GetDouble(4));
                     habitacion.Descripcion = elLectorDeDatos.GetString(5);
 
@@ -143,8 +143,8 @@ namespace Clases_Hotel
 
         {
             SqlParameter p1 = new SqlParameter("@Numero", this.Numero);
-            SqlParameter p2 = new SqlParameter("@Id_Estado_Habitacion", this.Id_EstadoHabitacion.ID_EstadoHabitacion);
-            SqlParameter p3 = new SqlParameter("@Id_Tipo_Habitacion", this.Id_TipoHabitacion.ID_TipoHabitacion);
+            SqlParameter p2 = new SqlParameter("@Id_Estado_Habitacion", this._Estado_Habitacion.ID_EstadoHabitacion);
+            SqlParameter p3 = new SqlParameter("@Id_Tipo_Habitacion", this._TipoHabitacion.ID_TipoHabitacion);
             SqlParameter p4 = new SqlParameter("@Costo", this.Costo);
             SqlParameter p5 = new SqlParameter("@Descripcion", this.Descripcion);
 

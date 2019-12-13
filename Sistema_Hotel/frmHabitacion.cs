@@ -37,7 +37,10 @@ namespace Sistema_Hotel
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            var h = ObtenerDatosFormulario();
+            if (ValidarCampos())
+            {
+
+                var h = ObtenerDatosFormulario();
 
             if (alternativa == "Agregar")
             {
@@ -62,6 +65,7 @@ namespace Sistema_Hotel
             LimpiarFormulario();
             ActualizarListaHabitaciones();
             BloquearFormulario();
+            }
         }
 
 
@@ -108,9 +112,9 @@ namespace Sistema_Hotel
             }
 
             habitacion.Numero = Convert.ToInt32(txtNroHabitacion.Text);
-            habitacion.Id_EstadoHabitacion = (Estado_Habitacion)cboEstadoHabitacion.SelectedItem;
+            habitacion._Estado_Habitacion = (Estado_Habitacion)cboEstadoHabitacion.SelectedItem;
             habitacion.Costo = Convert.ToDouble(txtCostoHabitacion.Text);
-            habitacion.Id_TipoHabitacion = (Tipo_Habitacion)cboTipoHabitacion.SelectedItem;
+            habitacion._TipoHabitacion = (Tipo_Habitacion)cboTipoHabitacion.SelectedItem;
             habitacion.Descripcion = txtDescripcionHabitacion.Text;
 
             return habitacion;
@@ -193,9 +197,10 @@ namespace Sistema_Hotel
             {
                 txtCodHabitacion.Text = Convert.ToString(h.ID_Habitacion);
                 txtNroHabitacion.Text = Convert.ToString(h.Numero);
-                cboEstadoHabitacion.SelectedItem = Convert.ToString(h.Id_EstadoHabitacion);
+                //cboEstadoHabitacion.SelectedItem = Convert.ToString(h._Estado_Habitacion);
+                cboEstadoHabitacion.SelectedItem = (Estado_Habitacion)Estado_Habitacion.ObtenerEsHabitacion(h._Estado_Habitacion.ID_EstadoHabitacion);
                 txtCostoHabitacion.Text = Convert.ToString(h.Costo);
-                cboTipoHabitacion.SelectedItem = Convert.ToString(h.Id_TipoHabitacion);
+                cboTipoHabitacion.SelectedItem = (Tipo_Habitacion)Tipo_Habitacion.ObtenerThabitacion(h._TipoHabitacion.ID_TipoHabitacion);
                 txtDescripcionHabitacion.Text = h.Descripcion;
 
             }
@@ -215,9 +220,6 @@ namespace Sistema_Hotel
             ActualizarListaHabitaciones();
             cboEstadoHabitacion.DataSource = Estado_Habitacion.ObtenerEstadoHabitacion();
             cboTipoHabitacion.DataSource = Tipo_Habitacion.ObtenerTipoHabitaciones();
-
-            //cboEstadoHabitacion.SelectedIndex = null;
-            //cboTipoHabitacion.SelectedIndex = null;
             BloquearFormulario();
         }
 
@@ -257,6 +259,96 @@ namespace Sistema_Hotel
         {
             frmListado_Habitaciones frmlistadoregistradores = new frmListado_Habitaciones();
             frmlistadoregistradores.Show();
+        }
+
+        private bool ValidarCampos()
+        {
+            if (String.IsNullOrWhiteSpace(txtNroHabitacion.Text))
+            {
+                MessageBox.Show("Ingrese el Número de Habitación.", "Mantenimiento de Habitaciones.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNroHabitacion.Focus();
+                return false;
+            }
+
+            var eh = (Estado_Habitacion)cboEstadoHabitacion.SelectedItem;
+            if (eh == null)
+            {
+                MessageBox.Show("Seleccione el Estado Habitación.", "Mantenimiento de Habitaciones.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboEstadoHabitacion.Focus();
+                return false;
+            }
+
+            if (String.IsNullOrWhiteSpace(txtCostoHabitacion.Text))
+            {
+                MessageBox.Show("Ingrese el Costo.", "Mantenimiento de Habitaciones.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCostoHabitacion.Focus();
+                return false;
+            }
+
+            if (cboTipoHabitacion.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione el Tipo Habitación.", "Mantenimiento de Habitaciones.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboTipoHabitacion.Focus();
+                return false;
+            }
+
+       
+            if (String.IsNullOrWhiteSpace(txtDescripcionHabitacion.Text))
+            {
+                MessageBox.Show("Escriba una breve Descripción.", "Mantenimiento de Habitaciones.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDescripcionHabitacion.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
+        private void txtNroHabitacion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCostoHabitacion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            System.Globalization.CultureInfo cc = System.Threading.Thread.CurrentThread.CurrentCulture;
+
+            if (Char.IsNumber(e.KeyChar) || e.KeyChar.ToString() == cc.NumberFormat.NumberDecimalSeparator)
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

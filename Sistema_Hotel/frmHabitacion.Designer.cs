@@ -201,7 +201,7 @@
             // txtDescripcionHabitacion
             // 
             this.txtDescripcionHabitacion.BackColor = System.Drawing.Color.White;
-            this.txtDescripcionHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtDescripcionHabitacion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescripcionHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcionHabitacion.Location = new System.Drawing.Point(86, 233);
             this.txtDescripcionHabitacion.Name = "txtDescripcionHabitacion";
@@ -211,12 +211,13 @@
             // txtCostoHabitacion
             // 
             this.txtCostoHabitacion.BackColor = System.Drawing.Color.White;
-            this.txtCostoHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtCostoHabitacion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCostoHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCostoHabitacion.Location = new System.Drawing.Point(55, 153);
             this.txtCostoHabitacion.Name = "txtCostoHabitacion";
             this.txtCostoHabitacion.Size = new System.Drawing.Size(235, 21);
             this.txtCostoHabitacion.TabIndex = 39;
+            this.txtCostoHabitacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCostoHabitacion_KeyPress);
             // 
             // txtCodHabitacion
             // 
@@ -303,12 +304,13 @@
             // txtNroHabitacion
             // 
             this.txtNroHabitacion.BackColor = System.Drawing.Color.White;
-            this.txtNroHabitacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtNroHabitacion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNroHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNroHabitacion.Location = new System.Drawing.Point(138, 73);
             this.txtNroHabitacion.Name = "txtNroHabitacion";
             this.txtNroHabitacion.Size = new System.Drawing.Size(152, 21);
             this.txtNroHabitacion.TabIndex = 56;
+            this.txtNroHabitacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNroHabitacion_KeyPress);
             // 
             // gbxHabitacion
             // 
