@@ -175,6 +175,7 @@
             this.gbxRegistroClientes.Controls.Add(this.lblDireccionCliente);
             this.gbxRegistroClientes.Controls.Add(this.lblNombreCliente);
             this.gbxRegistroClientes.Controls.Add(this.lblCodCliente);
+            this.gbxRegistroClientes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxRegistroClientes.Location = new System.Drawing.Point(12, 12);
             this.gbxRegistroClientes.Name = "gbxRegistroClientes";
             this.gbxRegistroClientes.Size = new System.Drawing.Size(820, 321);
@@ -254,7 +255,7 @@
             this.txtTelefonoCliente.Location = new System.Drawing.Point(80, 154);
             this.txtTelefonoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefonoCliente.Name = "txtTelefonoCliente";
-            this.txtTelefonoCliente.Size = new System.Drawing.Size(210, 21);
+            this.txtTelefonoCliente.Size = new System.Drawing.Size(210, 22);
             this.txtTelefonoCliente.TabIndex = 38;
             // 
             // txtNroDocumentoCliente
@@ -263,7 +264,7 @@
             this.txtNroDocumentoCliente.Location = new System.Drawing.Point(113, 196);
             this.txtNroDocumentoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtNroDocumentoCliente.Name = "txtNroDocumentoCliente";
-            this.txtNroDocumentoCliente.Size = new System.Drawing.Size(177, 21);
+            this.txtNroDocumentoCliente.Size = new System.Drawing.Size(177, 22);
             this.txtNroDocumentoCliente.TabIndex = 39;
             // 
             // txtNombreCliente
@@ -272,7 +273,7 @@
             this.txtNombreCliente.Location = new System.Drawing.Point(68, 74);
             this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.Size = new System.Drawing.Size(222, 21);
+            this.txtNombreCliente.Size = new System.Drawing.Size(222, 22);
             this.txtNombreCliente.TabIndex = 36;
             // 
             // txtDireccionCliente
@@ -281,7 +282,7 @@
             this.txtDireccionCliente.Location = new System.Drawing.Point(75, 115);
             this.txtDireccionCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccionCliente.Name = "txtDireccionCliente";
-            this.txtDireccionCliente.Size = new System.Drawing.Size(215, 21);
+            this.txtDireccionCliente.Size = new System.Drawing.Size(215, 22);
             this.txtDireccionCliente.TabIndex = 37;
             // 
             // cboNacionalidadCliente
@@ -292,7 +293,7 @@
             this.cboNacionalidadCliente.Location = new System.Drawing.Point(101, 236);
             this.cboNacionalidadCliente.Margin = new System.Windows.Forms.Padding(4);
             this.cboNacionalidadCliente.Name = "cboNacionalidadCliente";
-            this.cboNacionalidadCliente.Size = new System.Drawing.Size(189, 24);
+            this.cboNacionalidadCliente.Size = new System.Drawing.Size(189, 25);
             this.cboNacionalidadCliente.TabIndex = 40;
             // 
             // txtCodCliente
@@ -304,7 +305,7 @@
             this.txtCodCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodCliente.Name = "txtCodCliente";
             this.txtCodCliente.ReadOnly = true;
-            this.txtCodCliente.Size = new System.Drawing.Size(197, 21);
+            this.txtCodCliente.Size = new System.Drawing.Size(197, 22);
             this.txtCodCliente.TabIndex = 35;
             this.txtCodCliente.TabStop = false;
             // 

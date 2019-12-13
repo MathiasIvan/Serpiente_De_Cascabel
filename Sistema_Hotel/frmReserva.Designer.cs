@@ -370,6 +370,7 @@
             this.gbxReserva.Controls.Add(this.cboClienteReserva);
             this.gbxReserva.Controls.Add(this.dtpFechaHoraSalidaReserva);
             this.gbxReserva.Controls.Add(this.dtpFechaHoraEntradaReserva);
+            this.gbxReserva.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxReserva.Location = new System.Drawing.Point(12, 12);
             this.gbxReserva.Name = "gbxReserva";
             this.gbxReserva.Size = new System.Drawing.Size(820, 389);

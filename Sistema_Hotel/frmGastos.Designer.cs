@@ -210,7 +210,7 @@
             this.gbxGastos.Controls.Add(this.txtCostoTotalGasto);
             this.gbxGastos.Controls.Add(this.dtpFechaGasto);
             this.gbxGastos.Controls.Add(this.txtCantidadGasto);
-            this.gbxGastos.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxGastos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxGastos.Location = new System.Drawing.Point(12, 12);
             this.gbxGastos.Name = "gbxGastos";
             this.gbxGastos.Size = new System.Drawing.Size(820, 321);

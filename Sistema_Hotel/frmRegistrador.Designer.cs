@@ -118,7 +118,7 @@
             this.txtObservacionRegistrador.Location = new System.Drawing.Point(93, 238);
             this.txtObservacionRegistrador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtObservacionRegistrador.Name = "txtObservacionRegistrador";
-            this.txtObservacionRegistrador.Size = new System.Drawing.Size(191, 21);
+            this.txtObservacionRegistrador.Size = new System.Drawing.Size(191, 22);
             this.txtObservacionRegistrador.TabIndex = 25;
             // 
             // txtNroDocumentoRegistrador
@@ -128,7 +128,7 @@
             this.txtNroDocumentoRegistrador.Location = new System.Drawing.Point(110, 197);
             this.txtNroDocumentoRegistrador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNroDocumentoRegistrador.Name = "txtNroDocumentoRegistrador";
-            this.txtNroDocumentoRegistrador.Size = new System.Drawing.Size(174, 21);
+            this.txtNroDocumentoRegistrador.Size = new System.Drawing.Size(174, 22);
             this.txtNroDocumentoRegistrador.TabIndex = 24;
             // 
             // txtTelefonoRegistrador
@@ -138,7 +138,7 @@
             this.txtTelefonoRegistrador.Location = new System.Drawing.Point(67, 158);
             this.txtTelefonoRegistrador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefonoRegistrador.Name = "txtTelefonoRegistrador";
-            this.txtTelefonoRegistrador.Size = new System.Drawing.Size(217, 21);
+            this.txtTelefonoRegistrador.Size = new System.Drawing.Size(217, 22);
             this.txtTelefonoRegistrador.TabIndex = 22;
             // 
             // txtNombreRegistrador
@@ -148,7 +148,7 @@
             this.txtNombreRegistrador.Location = new System.Drawing.Point(65, 75);
             this.txtNombreRegistrador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombreRegistrador.Name = "txtNombreRegistrador";
-            this.txtNombreRegistrador.Size = new System.Drawing.Size(219, 21);
+            this.txtNombreRegistrador.Size = new System.Drawing.Size(219, 22);
             this.txtNombreRegistrador.TabIndex = 17;
             // 
             // txtDireccionRegistrador
@@ -158,7 +158,7 @@
             this.txtDireccionRegistrador.Location = new System.Drawing.Point(72, 117);
             this.txtDireccionRegistrador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDireccionRegistrador.Name = "txtDireccionRegistrador";
-            this.txtDireccionRegistrador.Size = new System.Drawing.Size(212, 21);
+            this.txtDireccionRegistrador.Size = new System.Drawing.Size(212, 22);
             this.txtDireccionRegistrador.TabIndex = 20;
             // 
             // txtCodRegistrador
@@ -170,7 +170,7 @@
             this.txtCodRegistrador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodRegistrador.Name = "txtCodRegistrador";
             this.txtCodRegistrador.ReadOnly = true;
-            this.txtCodRegistrador.Size = new System.Drawing.Size(172, 21);
+            this.txtCodRegistrador.Size = new System.Drawing.Size(172, 22);
             this.txtCodRegistrador.TabIndex = 16;
             // 
             // lblObservacionRegistrador
@@ -252,6 +252,7 @@
             this.gbxRegistradores.Controls.Add(this.lblTelefonoRegistrador);
             this.gbxRegistradores.Controls.Add(this.lblNroDocumentoRegistrador);
             this.gbxRegistradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbxRegistradores.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxRegistradores.Location = new System.Drawing.Point(12, 13);
             this.gbxRegistradores.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbxRegistradores.Name = "gbxRegistradores";

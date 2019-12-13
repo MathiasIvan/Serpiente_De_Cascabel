@@ -328,7 +328,7 @@
             this.gbxHabitacion.Controls.Add(this.txtCostoHabitacion);
             this.gbxHabitacion.Controls.Add(this.cboTipoHabitacion);
             this.gbxHabitacion.Controls.Add(this.txtDescripcionHabitacion);
-            this.gbxHabitacion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxHabitacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxHabitacion.Location = new System.Drawing.Point(12, 12);
             this.gbxHabitacion.Name = "gbxHabitacion";
             this.gbxHabitacion.Size = new System.Drawing.Size(820, 321);

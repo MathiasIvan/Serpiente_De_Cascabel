@@ -123,6 +123,10 @@ namespace Sistema_Hotel
             h = this.Height;
         }
 
-        
+        private void pictCrearUsuario_Click(object sender, EventArgs e)
+        {
+            frmCrearUsuario frmcrearusuario = new frmCrearUsuario();
+            frmcrearusuario.Show();
+        }
     }
 }

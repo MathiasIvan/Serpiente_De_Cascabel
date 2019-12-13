@@ -232,8 +232,6 @@ namespace Sistema_Hotel
 
         private void mnsMoverFormulario_MouseDown(object sender, MouseEventArgs e)
         {
-            //para poder arrastrar el formulario sin bordes
-
             SendMessage(this.Handle, 0x112, 0xf012, 0);
             w = this.Width;
             h = this.Height;

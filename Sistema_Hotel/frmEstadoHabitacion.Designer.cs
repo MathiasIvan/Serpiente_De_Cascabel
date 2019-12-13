@@ -41,10 +41,10 @@
             this.lblDescripcionEstadoHabitacion = new System.Windows.Forms.Label();
             this.lblCodEstadoHabitacion = new System.Windows.Forms.Label();
             this.gbxEstadoHabitacion = new System.Windows.Forms.GroupBox();
+            this.pictEstadoHabitacion = new System.Windows.Forms.PictureBox();
             this.lblListadoEstadoHabitaciones = new System.Windows.Forms.Label();
             this.mnsMoverFormulario = new System.Windows.Forms.MenuStrip();
             this.btnGenerarListado = new System.Windows.Forms.Button();
-            this.pictEstadoHabitacion = new System.Windows.Forms.PictureBox();
             this.gbxEstadoHabitacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictEstadoHabitacion)).BeginInit();
             this.SuspendLayout();
@@ -234,12 +234,25 @@
             this.gbxEstadoHabitacion.Controls.Add(this.btnLimpiar);
             this.gbxEstadoHabitacion.Controls.Add(this.btnAceptar);
             this.gbxEstadoHabitacion.Controls.Add(this.btnCancelar);
+            this.gbxEstadoHabitacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxEstadoHabitacion.Location = new System.Drawing.Point(12, 12);
             this.gbxEstadoHabitacion.Name = "gbxEstadoHabitacion";
             this.gbxEstadoHabitacion.Size = new System.Drawing.Size(533, 185);
             this.gbxEstadoHabitacion.TabIndex = 41;
             this.gbxEstadoHabitacion.TabStop = false;
             this.gbxEstadoHabitacion.Text = "Mantenimiento de Estado / Habitaciones";
+            // 
+            // pictEstadoHabitacion
+            // 
+            this.pictEstadoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.occupied_vacant_two_sided_door_hang_tag_tg_1487_pl__1_1;
+            this.pictEstadoHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictEstadoHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictEstadoHabitacion.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictEstadoHabitacion.Location = new System.Drawing.Point(296, 29);
+            this.pictEstadoHabitacion.Name = "pictEstadoHabitacion";
+            this.pictEstadoHabitacion.Size = new System.Drawing.Size(222, 141);
+            this.pictEstadoHabitacion.TabIndex = 40;
+            this.pictEstadoHabitacion.TabStop = false;
             // 
             // lblListadoEstadoHabitaciones
             // 
@@ -278,18 +291,6 @@
             this.btnGenerarListado.Text = "Generar Listado";
             this.btnGenerarListado.UseVisualStyleBackColor = false;
             this.btnGenerarListado.Click += new System.EventHandler(this.btnGenerarListado_Click);
-            // 
-            // pictEstadoHabitacion
-            // 
-            this.pictEstadoHabitacion.BackgroundImage = global::Sistema_Hotel.Properties.Resources.occupied_vacant_two_sided_door_hang_tag_tg_1487_pl__1_1;
-            this.pictEstadoHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictEstadoHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictEstadoHabitacion.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictEstadoHabitacion.Location = new System.Drawing.Point(296, 29);
-            this.pictEstadoHabitacion.Name = "pictEstadoHabitacion";
-            this.pictEstadoHabitacion.Size = new System.Drawing.Size(222, 141);
-            this.pictEstadoHabitacion.TabIndex = 40;
-            this.pictEstadoHabitacion.TabStop = false;
             // 
             // frmEstadoHabitacion
             // 

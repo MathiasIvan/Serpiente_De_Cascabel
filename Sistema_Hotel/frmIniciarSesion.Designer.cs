@@ -44,29 +44,29 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(237, 57);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(53, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(57, 17);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario :";
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseña.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContraseña.Location = new System.Drawing.Point(237, 104);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(78, 16);
+            this.lblContraseña.Size = new System.Drawing.Size(83, 17);
             this.lblContraseña.TabIndex = 1;
             this.lblContraseña.Text = "Contraseña :";
             // 
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(296, 54);
+            this.txtUsuario.Location = new System.Drawing.Point(300, 54);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(189, 21);
+            this.txtUsuario.Size = new System.Drawing.Size(185, 21);
             this.txtUsuario.TabIndex = 0;
             // 
             // btnIniciar
@@ -88,21 +88,21 @@
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(321, 101);
+            this.txtContraseña.Location = new System.Drawing.Point(326, 101);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(164, 21);
+            this.txtContraseña.Size = new System.Drawing.Size(159, 21);
             this.txtContraseña.TabIndex = 1;
             // 
             // lblIniciarSesion
             // 
             this.lblIniciarSesion.AutoSize = true;
-            this.lblIniciarSesion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIniciarSesion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIniciarSesion.Location = new System.Drawing.Point(318, 9);
             this.lblIniciarSesion.Name = "lblIniciarSesion";
-            this.lblIniciarSesion.Size = new System.Drawing.Size(84, 16);
+            this.lblIniciarSesion.Size = new System.Drawing.Size(85, 17);
             this.lblIniciarSesion.TabIndex = 7;
-            this.lblIniciarSesion.Text = "Iniciar / Sesión";
+            this.lblIniciarSesion.Text = "Iniciar Sesión";
             // 
             // panel1
             // 
