@@ -235,6 +235,12 @@ namespace Sistema_Hotel
             w = this.Width;
             h = this.Height;
         }
+
+        private void btnGenerarListado_Click(object sender, EventArgs e)
+        {
+            frmListado_Gastos frmlistadogastos = new frmListado_Gastos();
+            frmlistadogastos.Show();
+        }
     }
 
 }

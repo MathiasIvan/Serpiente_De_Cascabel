@@ -13,9 +13,9 @@ namespace Clases_Hotel
         public int ID_Reserva { get; set; }
         public DateTime FechaHoraEntrada { get; set; }
         public DateTime FechaHoraSalida { get; set; }
-        public Habitacion Id_Habitacion { get; set; }
-        public Cliente Id_Cliente { get; set; }
-        public Registrador Id_Registrador { get; set; }
+        public Habitacion _Habitacion { get; set; }
+        public Cliente _Cliente { get; set; }
+        public Registrador _Registrador { get; set; }
         public double CostoTotal { get; set; }
         public string Observacion { get; set; }
 
@@ -49,9 +49,9 @@ namespace Clases_Hotel
                     reserva.ID_Reserva = elLectorDeDatos.GetInt32(0);
                     reserva.FechaHoraEntrada =  elLectorDeDatos.GetDateTime(1);
                     reserva.FechaHoraSalida = elLectorDeDatos.GetDateTime(2);
-                    reserva.Id_Habitacion = Habitacion.ObtenerHabitacion(elLectorDeDatos.GetInt32(3));
-                    reserva.Id_Cliente = Cliente.ObtenerCliente(elLectorDeDatos.GetInt32(4));
-                    reserva.Id_Registrador = Registrador.ObtenerRegistrador(elLectorDeDatos.GetInt32(5));
+                    reserva._Habitacion = Habitacion.ObtenerHabitacion(elLectorDeDatos.GetInt32(3));
+                    reserva._Cliente = Cliente.ObtenerCliente(elLectorDeDatos.GetInt32(4));
+                    reserva._Registrador = Registrador.ObtenerRegistrador(elLectorDeDatos.GetInt32(5));
                     reserva.CostoTotal = elLectorDeDatos.GetDouble(6);
                     reserva.Observacion = elLectorDeDatos.GetString(7);
 
@@ -146,12 +146,12 @@ namespace Clases_Hotel
 
         private SqlCommand ObtenerParametros(SqlCommand cmd, Boolean id = false)
 
-        {
+        {//
             SqlParameter p1 = new SqlParameter("@FechaHoraEntrada", this.FechaHoraEntrada);
             SqlParameter p2 = new SqlParameter("@FechaHoraSalida", this.FechaHoraSalida);
-            SqlParameter p3 = new SqlParameter("@Id_Habitacion", this.Id_Habitacion.ID_Habitacion.ToString());
-            SqlParameter p4 = new SqlParameter("@Id_Cliente", this.Id_Cliente.ID_Cliente.ToString());
-            SqlParameter p5 = new SqlParameter("@Id_Registrador", this.Id_Registrador.ID_Registrador.ToString());
+            SqlParameter p3 = new SqlParameter("@Id_Habitacion", this._Habitacion.ID_Habitacion.ToString());
+            SqlParameter p4 = new SqlParameter("@Id_Cliente", this._Cliente.ID_Cliente.ToString());
+            SqlParameter p5 = new SqlParameter("@Id_Registrador", this._Registrador.ID_Registrador.ToString());
             SqlParameter p6 = new SqlParameter("@Costo_Total", this.CostoTotal);
             SqlParameter p7 = new SqlParameter("@Observacion", this.Observacion);
 

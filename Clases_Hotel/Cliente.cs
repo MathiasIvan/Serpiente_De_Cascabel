@@ -21,9 +21,9 @@ namespace Clases_Hotel
 
 
     public class Cliente: Persona
-    {     
-            public int ID_Cliente;
-            public Nacionalidades Nacionalidad;
+    {
+        public int ID_Cliente { get; set; }
+        public Nacionalidades Nacionalidad;
             
 
 
@@ -75,7 +75,7 @@ namespace Clases_Hotel
         {
             Cliente cliente = null;
 
-            if (listaClientes.Count == 0)
+            if (listaClientes.Count == 0) 
             {
                 Cliente.ObtenerClientes();
             }

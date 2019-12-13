@@ -52,6 +52,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblListadoGastos = new System.Windows.Forms.Label();
             this.mnsMoverFormulario = new System.Windows.Forms.MenuStrip();
+            this.btnGenerarListado = new System.Windows.Forms.Button();
             this.gbxGastos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictGatos)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +66,7 @@
             this.lstGastos.ItemHeight = 16;
             this.lstGastos.Location = new System.Drawing.Point(12, 366);
             this.lstGastos.Name = "lstGastos";
-            this.lstGastos.Size = new System.Drawing.Size(716, 148);
+            this.lstGastos.Size = new System.Drawing.Size(704, 180);
             this.lstGastos.TabIndex = 31;
             this.lstGastos.TabStop = false;
             this.lstGastos.Click += new System.EventHandler(this.lstGastos_Click);
@@ -292,10 +293,10 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Location = new System.Drawing.Point(744, 444);
+            this.btnEliminar.Location = new System.Drawing.Point(728, 440);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(88, 30);
+            this.btnEliminar.Size = new System.Drawing.Size(104, 30);
             this.btnEliminar.TabIndex = 44;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -312,10 +313,10 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.Black;
-            this.btnActualizar.Location = new System.Drawing.Point(744, 406);
+            this.btnActualizar.Location = new System.Drawing.Point(728, 404);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(88, 30);
+            this.btnActualizar.Size = new System.Drawing.Size(104, 30);
             this.btnActualizar.TabIndex = 43;
             this.btnActualizar.Text = "&Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
@@ -332,10 +333,10 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Location = new System.Drawing.Point(744, 366);
+            this.btnAgregar.Location = new System.Drawing.Point(728, 366);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(88, 30);
+            this.btnAgregar.Size = new System.Drawing.Size(104, 30);
             this.btnAgregar.TabIndex = 42;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -351,10 +352,10 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Location = new System.Drawing.Point(744, 484);
+            this.btnSalir.Location = new System.Drawing.Point(728, 516);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(88, 30);
+            this.btnSalir.Size = new System.Drawing.Size(104, 30);
             this.btnSalir.TabIndex = 45;
             this.btnSalir.Text = "&Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -373,20 +374,40 @@
             // mnsMoverFormulario
             // 
             this.mnsMoverFormulario.BackColor = System.Drawing.Color.Transparent;
-            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mnsMoverFormulario.Dock = System.Windows.Forms.DockStyle.Left;
             this.mnsMoverFormulario.Location = new System.Drawing.Point(0, 0);
             this.mnsMoverFormulario.Name = "mnsMoverFormulario";
-            this.mnsMoverFormulario.Size = new System.Drawing.Size(845, 533);
+            this.mnsMoverFormulario.Size = new System.Drawing.Size(30, 563);
             this.mnsMoverFormulario.TabIndex = 46;
             this.mnsMoverFormulario.Text = "menuStrip1";
             this.mnsMoverFormulario.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mnsMoverFormulario_MouseDown);
+            // 
+            // btnGenerarListado
+            // 
+            this.btnGenerarListado.BackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerarListado.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnGenerarListado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarListado.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarListado.ForeColor = System.Drawing.Color.Black;
+            this.btnGenerarListado.Location = new System.Drawing.Point(728, 478);
+            this.btnGenerarListado.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenerarListado.Name = "btnGenerarListado";
+            this.btnGenerarListado.Size = new System.Drawing.Size(104, 30);
+            this.btnGenerarListado.TabIndex = 47;
+            this.btnGenerarListado.Text = "Generar Listado";
+            this.btnGenerarListado.UseVisualStyleBackColor = false;
+            this.btnGenerarListado.Click += new System.EventHandler(this.btnGenerarListado_Click);
             // 
             // frmGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(845, 533);
+            this.ClientSize = new System.Drawing.Size(845, 563);
+            this.Controls.Add(this.btnGenerarListado);
             this.Controls.Add(this.lblListadoGastos);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnActualizar);
@@ -434,5 +455,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblListadoGastos;
         private System.Windows.Forms.MenuStrip mnsMoverFormulario;
+        private System.Windows.Forms.Button btnGenerarListado;
     }
 }

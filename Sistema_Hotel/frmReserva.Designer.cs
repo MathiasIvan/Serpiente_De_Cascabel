@@ -55,6 +55,7 @@
             this.gbxReserva = new System.Windows.Forms.GroupBox();
             this.pictReserva = new System.Windows.Forms.PictureBox();
             this.lblListadoReservas = new System.Windows.Forms.Label();
+            this.btnGenerarListado = new System.Windows.Forms.Button();
             this.gbxReserva.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictReserva)).BeginInit();
             this.SuspendLayout();
@@ -67,9 +68,9 @@
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(744, 511);
+            this.btnEliminar.Location = new System.Drawing.Point(728, 505);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(88, 30);
+            this.btnEliminar.Size = new System.Drawing.Size(104, 30);
             this.btnEliminar.TabIndex = 39;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -83,9 +84,9 @@
             this.btnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(744, 473);
+            this.btnActualizar.Location = new System.Drawing.Point(728, 469);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(88, 30);
+            this.btnActualizar.Size = new System.Drawing.Size(104, 30);
             this.btnActualizar.TabIndex = 38;
             this.btnActualizar.Text = "&Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -99,9 +100,9 @@
             this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(744, 433);
+            this.btnAgregar.Location = new System.Drawing.Point(728, 433);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(88, 30);
+            this.btnAgregar.Size = new System.Drawing.Size(104, 30);
             this.btnAgregar.TabIndex = 37;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -115,9 +116,9 @@
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(744, 550);
+            this.btnSalir.Location = new System.Drawing.Point(728, 576);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(88, 30);
+            this.btnSalir.Size = new System.Drawing.Size(104, 30);
             this.btnSalir.TabIndex = 40;
             this.btnSalir.Text = "&Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -181,7 +182,7 @@
             this.lstReserva.FormattingEnabled = true;
             this.lstReserva.Location = new System.Drawing.Point(12, 433);
             this.lstReserva.Name = "lstReserva";
-            this.lstReserva.Size = new System.Drawing.Size(716, 147);
+            this.lstReserva.Size = new System.Drawing.Size(704, 173);
             this.lstReserva.TabIndex = 41;
             this.lstReserva.TabStop = false;
             this.lstReserva.Click += new System.EventHandler(this.lstReserva_Click);
@@ -398,13 +399,30 @@
             this.lblListadoReservas.TabIndex = 43;
             this.lblListadoReservas.Text = "Listado de Reservas";
             // 
+            // btnGenerarListado
+            // 
+            this.btnGenerarListado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerarListado.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnGenerarListado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarListado.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarListado.Location = new System.Drawing.Point(728, 540);
+            this.btnGenerarListado.Name = "btnGenerarListado";
+            this.btnGenerarListado.Size = new System.Drawing.Size(104, 30);
+            this.btnGenerarListado.TabIndex = 44;
+            this.btnGenerarListado.Text = "Generar Listado";
+            this.btnGenerarListado.UseVisualStyleBackColor = true;
+            this.btnGenerarListado.Click += new System.EventHandler(this.btnGenerarListado_Click);
+            // 
             // frmReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(844, 597);
+            this.ClientSize = new System.Drawing.Size(844, 625);
+            this.Controls.Add(this.btnGenerarListado);
             this.Controls.Add(this.lblListadoReservas);
             this.Controls.Add(this.gbxReserva);
             this.Controls.Add(this.btnEliminar);
@@ -454,5 +472,6 @@
         private System.Windows.Forms.GroupBox gbxReserva;
         private System.Windows.Forms.Label lblListadoReservas;
         private System.Windows.Forms.PictureBox pictReserva;
+        private System.Windows.Forms.Button btnGenerarListado;
     }
 }

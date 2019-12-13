@@ -65,9 +65,9 @@ namespace Sistema_Hotel
 
             reserva.FechaHoraEntrada = dtpFechaHoraEntradaReserva.Value.Date;
             reserva.FechaHoraSalida = dtpFechaHoraSalidaReserva.Value.Date;
-            reserva.Id_Habitacion = (Habitacion)cboHabitacionReserva.SelectedItem;
-            reserva.Id_Cliente = (Cliente)cboClienteReserva.SelectedItem;
-            reserva.Id_Registrador = (Registrador)cboRegistradorReserva.SelectedItem;
+            reserva._Habitacion = (Habitacion)cboHabitacionReserva.SelectedItem;
+            reserva._Cliente = (Cliente)cboClienteReserva.SelectedItem;
+            reserva._Registrador = (Registrador)cboRegistradorReserva.SelectedItem;
             reserva.CostoTotal = Convert.ToDouble(txtCostoTotalReserva.Text);
             reserva.Observacion = txtObservacionReserva.Text;
 
@@ -104,22 +104,7 @@ namespace Sistema_Hotel
             }
         }
 
-        private void lstReserva_Click(object sender, EventArgs e)
-        {
-            Reserva rs = (Reserva)lstReserva.SelectedItem;
-
-            if (rs != null)
-            {
-                txtCodReserva.Text = rs.ID_Reserva.ToString();
-                dtpFechaHoraEntradaReserva.MinDate = rs.FechaHoraEntrada;
-                dtpFechaHoraSalidaReserva.MinDate = rs.FechaHoraSalida;
-                cboHabitacionReserva.SelectedItem = rs.Id_Habitacion.ToString(); 
-                cboClienteReserva.SelectedItem = rs.Id_Cliente.ToString(); 
-                cboRegistradorReserva.SelectedItem = rs.Id_Registrador.ToString(); 
-                txtCostoTotalReserva.Text = rs.CostoTotal.ToString();
-                txtObservacionReserva.Text = rs.Observacion;
-            }
-        }
+       
 
         private void ActualizarListaReservas()
         {
@@ -131,8 +116,8 @@ namespace Sistema_Hotel
         private void LimpiarFormulario()
         {
             txtCodReserva.Text = "";
-            dtpFechaHoraEntradaReserva.Value = DateTime.Now;
-            dtpFechaHoraSalidaReserva.Value = DateTime.Now;
+            dtpFechaHoraEntradaReserva.MinDate = System.DateTime.Now;
+            dtpFechaHoraSalidaReserva.MinDate = System.DateTime.Now;
             cboHabitacionReserva.SelectedItem = null;
             cboClienteReserva.SelectedItem = null;
             cboRegistradorReserva.SelectedItem = null;
@@ -156,6 +141,7 @@ namespace Sistema_Hotel
             btnCancelar.Enabled = false;
             btnLimpiar.Enabled = false;
 
+            lstReserva.Enabled = true;
             btnAgregar.Enabled = true;
             btnActualizar.Enabled = true;
             btnEliminar.Enabled = true;
@@ -176,6 +162,7 @@ namespace Sistema_Hotel
             btnCancelar.Enabled = true;
             btnLimpiar.Enabled = true;
 
+            lstReserva.Enabled = false;
             btnAgregar.Enabled = false;
             btnActualizar.Enabled = false;
             btnEliminar.Enabled = false;
@@ -227,6 +214,29 @@ namespace Sistema_Hotel
             {
                 MessageBox.Show("La Fecha de Salida no puede ser menor a la Fecha de Entrada.");
                 dtpFechaHoraSalidaReserva.Focus();
+            }
+        }
+
+        private void btnGenerarListado_Click(object sender, EventArgs e)
+        {
+            frmListado_Reservas frmlistadoreservas = new frmListado_Reservas();
+            frmlistadoreservas.Show();
+        }
+
+        private void lstReserva_Click(object sender, EventArgs e)
+        {
+            Reserva rs = (Reserva)lstReserva.SelectedItem;
+
+            if (rs != null)
+            {
+                txtCodReserva.Text = rs.ID_Reserva.ToString();
+                dtpFechaHoraEntradaReserva.MinDate = rs.FechaHoraEntrada;
+                dtpFechaHoraSalidaReserva.MinDate = rs.FechaHoraSalida;
+                cboClienteReserva.SelectedItem = (Cliente)Cliente.ObtenerCliente(rs._Cliente.ID_Cliente);
+                cboHabitacionReserva.SelectedItem = (Habitacion)Habitacion.ObtenerHabitacion(rs._Habitacion.ID_Habitacion);
+                cboRegistradorReserva.SelectedItem = (Registrador)Registrador.ObtenerRegistrador(rs._Registrador.ID_Registrador);
+                txtCostoTotalReserva.Text = rs.CostoTotal.ToString();
+                txtObservacionReserva.Text = rs.Observacion;
             }
         }
     }
